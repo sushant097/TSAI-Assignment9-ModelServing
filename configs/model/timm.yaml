@@ -1,0 +1,16 @@
+_target_: src.models.timm_module.TIMMLitModule
+
+model_name: resnet18
+
+optimizer:
+  _target_: torch.optim.Adam
+  _partial_: true
+  lr: 0.001
+  weight_decay: 0.0
+
+
+#net:
+#  _target_: timm.create_model
+#  model_name: resnet18
+#  pretrained: True
+#  num_classes: 10

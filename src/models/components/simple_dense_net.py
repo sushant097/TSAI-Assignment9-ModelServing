@@ -4,7 +4,7 @@ from torch import nn
 class SimpleDenseNet(nn.Module):
     def __init__(
         self,
-        input_size: int = 784,
+        input_size: int = 3072,
         lin1_size: int = 256,
         lin2_size: int = 256,
         lin3_size: int = 256,

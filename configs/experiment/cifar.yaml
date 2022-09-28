@@ -9,25 +9,13 @@ defaults:
   - override /callbacks: default.yaml
   - override /trainer: default.yaml
 
+
 # all parameters below will be merged with parameters from default configurations set above
 # this allows you to overwrite only specified parameters
 
-tags: ["cifar", "simple_dense_net"]
+tags: ["cifar10"]
 
 seed: 12345
-
-trainer:
-  min_epochs: 10
-  max_epochs: 10
-  gradient_clip_val: 0.5
-
-model:
-  optimizer:
-    lr: 0.002
-  net:
-    lin1_size: 256
-    lin2_size: 512
-    lin3_size: 256
 
 datamodule:
   batch_size: 64

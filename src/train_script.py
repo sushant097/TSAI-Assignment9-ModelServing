@@ -100,6 +100,12 @@ def train(cfg: DictConfig) -> Tuple[dict, dict]:
 
     train_metrics = trainer.callback_metrics
 
+    log.info("Scripting Model ...")
+
+    scripted_model = model.to_torchscript(method='script')
+    torch.jit.save(scripted_model, f"{cfg.paths.output_dir}/model.script.pt")
+
+    log.info(f"Saving traced model to {cfg.paths.output_dir}/model.script.pt")
 
     if cfg.get("test"):
         log.info("Starting testing!")
@@ -118,7 +124,7 @@ def train(cfg: DictConfig) -> Tuple[dict, dict]:
     return metric_dict, object_dict
 
 
-@hydra.main(version_base="1.2", config_path=root / "configs", config_name="train.yaml")
+@hydra.main(version_base="1.2", config_path=root / "configs", config_name="train_script.yaml")
 def main(cfg: DictConfig) -> Optional[float]:
 
     # train the model

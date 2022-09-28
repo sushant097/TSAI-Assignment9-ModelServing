@@ -3,11 +3,11 @@ from typing import Any, Dict, Optional, Tuple
 import torch
 from pytorch_lightning import LightningDataModule
 from torch.utils.data import ConcatDataset, DataLoader, Dataset, random_split
-from torchvision.datasets import MNIST
+from torchvision.datasets import CIFAR10
 from torchvision.transforms import transforms
 
 
-class MNISTDataModule(LightningDataModule):
+class CIFARDataModule(LightningDataModule):
     """Example of LightningDataModule for MNIST dataset.
 
     A DataModule implements 5 key methods:
@@ -38,7 +38,7 @@ class MNISTDataModule(LightningDataModule):
     def __init__(
         self,
         data_dir: str = "data/",
-        train_val_test_split: Tuple[int, int, int] = (55_000, 5_000, 10_000),
+        train_val_test_split: Tuple[int, int, int] = (50_000, 5_000, 5_000),
         batch_size: int = 64,
         num_workers: int = 0,
         pin_memory: bool = False,
@@ -67,8 +67,8 @@ class MNISTDataModule(LightningDataModule):
 
         Do not use it to assign state (self.x = y).
         """
-        MNIST(self.hparams.data_dir, train=True, download=True)
-        MNIST(self.hparams.data_dir, train=False, download=True)
+        CIFAR10(self.hparams.data_dir, train=True, download=True)
+        CIFAR10(self.hparams.data_dir, train=False, download=True)
 
     def setup(self, stage: Optional[str] = None):
         """Load data. Set variables: `self.data_train`, `self.data_val`, `self.data_test`.
@@ -78,8 +78,8 @@ class MNISTDataModule(LightningDataModule):
         """
         # load and split datasets only if not loaded already
         if not self.data_train and not self.data_val and not self.data_test:
-            trainset = MNIST(self.hparams.data_dir, train=True, transform=self.transforms)
-            testset = MNIST(self.hparams.data_dir, train=False, transform=self.transforms)
+            trainset = CIFAR10(self.hparams.data_dir, train=True, transform=self.transforms)
+            testset = CIFAR10(self.hparams.data_dir, train=False, transform=self.transforms)
             dataset = ConcatDataset(datasets=[trainset, testset])
             self.data_train, self.data_val, self.data_test = random_split(
                 dataset=dataset,
@@ -133,6 +133,6 @@ if __name__ == "__main__":
     import pyrootutils
 
     root = pyrootutils.setup_root(__file__, pythonpath=True)
-    cfg = omegaconf.OmegaConf.load(root / "configs" / "datamodule" / "mnist.yaml")
+    cfg = omegaconf.OmegaConf.load(root / "configs" / "datamodule" / "cifar.yaml")
     cfg.data_dir = str(root / "data")
     _ = hydra.utils.instantiate(cfg)

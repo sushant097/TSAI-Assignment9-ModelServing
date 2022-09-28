@@ -1,29 +1,17 @@
 from typing import Any, List
 
 import torch
+import timm
 from pytorch_lightning import LightningModule
 from torchmetrics import MaxMetric, MeanMetric
 from torchmetrics.classification.accuracy import Accuracy
 
 
-class MNISTLitModule(LightningModule):
-    """Example of LightningModule for MNIST classification.
-
-    A LightningModule organizes your PyTorch code into 6 sections:
-        - Computations (init)
-        - Train loop (training_step)
-        - Validation loop (validation_step)
-        - Test loop (test_step)
-        - Prediction Loop (predict_step)
-        - Optimizers and LR Schedulers (configure_optimizers)
-
-    Docs:
-        https://pytorch-lightning.readthedocs.io/en/latest/common/lightning_module.html
-    """
+class TIMMLitModule(LightningModule):
 
     def __init__(
         self,
-        net: torch.nn.Module,
+        model_name,
         optimizer: torch.optim.Optimizer,
     ):
         super().__init__()
@@ -32,10 +20,7 @@ class MNISTLitModule(LightningModule):
         # also ensures init params will be stored in ckpt
         self.save_hyperparameters(logger=False, ignore=["net"])
 
-        # add tensorboard hp_metric logging here
-
-
-        self.net = net
+        self.net = timm.create_model(model_name, pretrained=True, num_classes=10)
 
         # loss function
         self.criterion = torch.nn.CrossEntropyLoss()
@@ -92,9 +77,8 @@ class MNISTLitModule(LightningModule):
         # update and log metrics
         self.val_loss(loss)
         self.val_acc(preds, targets)
-        self.log("val/loss", self.val_loss, on_step=False, on_epoch=True, prog_bar=True)
-        self.log("val/acc", self.val_acc, on_step=False, on_epoch=True, prog_bar=True)
-        self.log("hp_metric", self.val_loss, on_step=True,on_epoch=True, prog_bar=True)
+        self.log("val/loss", self.val_loss, on_step=True, on_epoch=True, prog_bar=True)
+        self.log("val/acc", self.val_acc, on_step=False, on_epoch=True, prog_bar=False)
 
         return {"loss": loss, "preds": preds, "targets": targets}
 
@@ -103,9 +87,10 @@ class MNISTLitModule(LightningModule):
         self.val_acc_best(acc)  # update best so far val acc
         # log `val_acc_best` as a value through `.compute()` method, instead of as a metric object
         # otherwise metric would be reset by lightning after each epoch
-        self.log("val/acc_best", self.val_acc_best.compute(), prog_bar=True)
+        self.log("val/acc_best", self.val_acc_best.compute(), on_step=False, on_epoch=True, prog_bar=False)
         res = self.val_acc_best.compute()
         self.log("hp_metric", res)
+
 
     def test_step(self, batch: Any, batch_idx: int):
         loss, preds, targets = self.step(batch)
@@ -124,7 +109,6 @@ class MNISTLitModule(LightningModule):
     def configure_optimizers(self):
         """Choose what optimizers and learning-rate schedulers to use in your optimization.
         Normally you'd need one. But in the case of GANs or similar you might have multiple.
-
         Examples:
             https://pytorch-lightning.readthedocs.io/en/latest/common/lightning_module.html#configure-optimizers
         """
@@ -139,5 +123,5 @@ if __name__ == "__main__":
     import pyrootutils
 
     root = pyrootutils.setup_root(__file__, pythonpath=True)
-    cfg = omegaconf.OmegaConf.load(root / "configs" / "model" / "mnist.yaml")
+    cfg = omegaconf.OmegaConf.load(root / "configs" / "model" / "timm.yaml")
     _ = hydra.utils.instantiate(cfg)

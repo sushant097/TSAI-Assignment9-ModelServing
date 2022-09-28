@@ -2,22 +2,22 @@ from typing import Any, List
 
 import torch
 from pytorch_lightning import LightningModule
-from torchmetrics import MaxMetric, MeanMetric
+from torchmetrics import MaxMetric
 from torchmetrics.classification.accuracy import Accuracy
 
 
-class MNISTLitModule(LightningModule):
-    """Example of LightningModule for MNIST classification.
+class CIFARLitModule(LightningModule):
+    """Example of LightningModule for CIFAR classification.
 
     A LightningModule organizes your PyTorch code into 6 sections:
-        - Computations (init)
+        - Computations (init).
         - Train loop (training_step)
         - Validation loop (validation_step)
         - Test loop (test_step)
         - Prediction Loop (predict_step)
         - Optimizers and LR Schedulers (configure_optimizers)
 
-    Docs:
+    Read the docs:
         https://pytorch-lightning.readthedocs.io/en/latest/common/lightning_module.html
     """
 
@@ -32,25 +32,18 @@ class MNISTLitModule(LightningModule):
         # also ensures init params will be stored in ckpt
         self.save_hyperparameters(logger=False, ignore=["net"])
 
-        # add tensorboard hp_metric logging here
-
-
         self.net = net
 
         # loss function
         self.criterion = torch.nn.CrossEntropyLoss()
 
-        # metric objects for calculating and averaging accuracy across batches
+        # use separate metric instance for train, val and test step
+        # to ensure a proper reduction over the epoch
         self.train_acc = Accuracy()
         self.val_acc = Accuracy()
         self.test_acc = Accuracy()
 
-        # for averaging loss across batches
-        self.train_loss = MeanMetric()
-        self.val_loss = MeanMetric()
-        self.test_loss = MeanMetric()
-
-        # for tracking best so far validation accuracy
+        # for logging best so far validation accuracy
         self.val_acc_best = MaxMetric()
 
     def forward(self, x: torch.Tensor):
@@ -71,55 +64,51 @@ class MNISTLitModule(LightningModule):
     def training_step(self, batch: Any, batch_idx: int):
         loss, preds, targets = self.step(batch)
 
-        # update and log metrics
-        self.train_loss(loss)
-        self.train_acc(preds, targets)
-        self.log("train/loss", self.train_loss, on_step=True, on_epoch=True, prog_bar=True)
-        self.log("train/acc", self.train_acc, on_step=True, on_epoch=True, prog_bar=True)
+        # log train metrics
+        acc = self.train_acc(preds, targets)
+        self.log("train/loss", loss, on_step=False, on_epoch=True, prog_bar=False)
+        self.log("train/acc", acc, on_step=False, on_epoch=True, prog_bar=True)
 
         # we can return here dict with any tensors
         # and then read it in some callback or in `training_epoch_end()` below
-        # remember to always return loss from `training_step()` or backpropagation will fail!
+        # remember to always return loss from `training_step()` or else backpropagation will fail!
         return {"loss": loss, "preds": preds, "targets": targets}
+
+
 
     def training_epoch_end(self, outputs: List[Any]):
         # `outputs` is a list of dicts returned from `training_step()`
-        pass
+        self.train_acc.reset()
 
     def validation_step(self, batch: Any, batch_idx: int):
         loss, preds, targets = self.step(batch)
 
-        # update and log metrics
-        self.val_loss(loss)
-        self.val_acc(preds, targets)
+        # log val metrics
+        acc = self.val_acc(preds, targets)
         self.log("val/loss", self.val_loss, on_step=False, on_epoch=True, prog_bar=True)
         self.log("val/acc", self.val_acc, on_step=False, on_epoch=True, prog_bar=True)
-        self.log("hp_metric", self.val_loss, on_step=True,on_epoch=True, prog_bar=True)
 
         return {"loss": loss, "preds": preds, "targets": targets}
 
     def validation_epoch_end(self, outputs: List[Any]):
-        acc = self.val_acc.compute()  # get current val acc
-        self.val_acc_best(acc)  # update best so far val acc
-        # log `val_acc_best` as a value through `.compute()` method, instead of as a metric object
-        # otherwise metric would be reset by lightning after each epoch
-        self.log("val/acc_best", self.val_acc_best.compute(), prog_bar=True)
+        acc = self.val_acc.compute()  # get val accuracy from current epoch
+        self.val_acc_best.update(acc)
+        self.log("val/acc_best", self.val_acc_best.compute(), on_step=False, on_epoch=True, prog_bar=True)
         res = self.val_acc_best.compute()
-        self.log("hp_metric", res)
+        self.log("hp_metric", res, on_step=True, on_epoch=True, prog_bar=True)
 
     def test_step(self, batch: Any, batch_idx: int):
         loss, preds, targets = self.step(batch)
 
-        # update and log metrics
-        self.test_loss(loss)
-        self.test_acc(preds, targets)
-        self.log("test/loss", self.test_loss, on_step=False, on_epoch=True, prog_bar=True)
-        self.log("test/acc", self.test_acc, on_step=False, on_epoch=True, prog_bar=True)
+        # log test metrics
+        acc = self.test_acc(preds, targets)
+        self.log("test/loss", loss, on_step=False, on_epoch=True)
+        self.log("test/acc", acc, on_step=False, on_epoch=True)
 
         return {"loss": loss, "preds": preds, "targets": targets}
 
     def test_epoch_end(self, outputs: List[Any]):
-        pass
+        self.test_acc.reset()
 
     def configure_optimizers(self):
         """Choose what optimizers and learning-rate schedulers to use in your optimization.
@@ -139,5 +128,5 @@ if __name__ == "__main__":
     import pyrootutils
 
     root = pyrootutils.setup_root(__file__, pythonpath=True)
-    cfg = omegaconf.OmegaConf.load(root / "configs" / "model" / "mnist.yaml")
+    cfg = omegaconf.OmegaConf.load(root / "configs" / "model" / "cifar.yaml")
     _ = hydra.utils.instantiate(cfg)

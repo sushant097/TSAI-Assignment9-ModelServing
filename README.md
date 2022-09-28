@@ -58,4 +58,5 @@ python src/train.py trainer.max_epochs=20 datamodule.batch_size=64
 ```
 
 ### Assignment Related
-
+To run the mnist demo
+`python src/train.py ckpt_path=/logs/main/... experiment=example`

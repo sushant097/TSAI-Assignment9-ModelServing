@@ -1,0 +1,15 @@
+_target_: src.models.cifar_module.CIFARLitModule
+
+optimizer:
+  _target_: torch.optim.Adam
+  _partial_: true
+  lr: 0.001
+  weight_decay: 0.0
+
+net:
+  _target_: src.models.components.simple_dense_net.SimpleDenseNet
+  input_size: 3072 # 32x32*3
+  lin1_size: 256 #  hidden1 dims
+  lin2_size: 128 # hidden2 dims
+  lin3_size: 64 # hidden3 dims
+  output_size: 10 # output units
