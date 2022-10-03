@@ -58,5 +58,16 @@ python src/train.py trainer.max_epochs=20 datamodule.batch_size=64
 ```
 
 ### Assignment Related
-To run the mnist demo
-`python src/train.py ckpt_path=/logs/main/... experiment=example`
+**To Train the Cifar10 Torch Script**
+
+`python src/train_script.py ckpt_path=/logs/main/... experiment=cifar`
+
+It saves the `model.script.pt` model inside `logs/train/runs/*`
+
+**To run the inference Cifar10 scripted model**
+
+`python .\src\demo_scripted.py ckpt_path=D:\EMLO_V2\Assignment\TSAI-Assignment4-Deployment-for-Demos\logs\train\runs\2022-09-29_07-05-14\model.script.pt
+`
+
+**RUN the docker container**
+`docker run -t -p 8080:8080 deployment-demo:latest `

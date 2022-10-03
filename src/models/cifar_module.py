@@ -1,6 +1,8 @@
 from typing import Any, List
 
 import torch
+import torch.nn.functional as F
+import torchvision.transforms as T
 from pytorch_lightning import LightningModule
 from torchmetrics import MaxMetric
 from torchmetrics.classification.accuracy import Accuracy
@@ -45,9 +47,23 @@ class CIFARLitModule(LightningModule):
 
         # for logging best so far validation accuracy
         self.val_acc_best = MaxMetric()
+        self.predict_transform = T.Normalize((0.1307,), (0.3081,))
 
     def forward(self, x: torch.Tensor):
         return self.net(x)
+
+    @torch.jit.export
+    def forward_jit(self, x: torch.Tensor):
+        with torch.no_grad():
+            # transform the inputs
+            x = self.predict_transform(x)
+
+            # forward pass
+            logits = self(x)
+            preds = F.softmax(logits, dim=-1)
+
+        return preds
+
 
     def on_train_start(self):
         # by default lightning executes validation step sanity checks before training starts,
@@ -85,8 +101,8 @@ class CIFARLitModule(LightningModule):
 
         # log val metrics
         acc = self.val_acc(preds, targets)
-        self.log("val/loss", self.val_loss, on_step=False, on_epoch=True, prog_bar=True)
-        self.log("val/acc", self.val_acc, on_step=False, on_epoch=True, prog_bar=True)
+        self.log("val/loss", loss, on_step=False, on_epoch=True, prog_bar=True)
+        self.log("val/acc", acc, on_step=False, on_epoch=True, prog_bar=True)
 
         return {"loss": loss, "preds": preds, "targets": targets}
 
@@ -95,7 +111,7 @@ class CIFARLitModule(LightningModule):
         self.val_acc_best.update(acc)
         self.log("val/acc_best", self.val_acc_best.compute(), on_step=False, on_epoch=True, prog_bar=True)
         res = self.val_acc_best.compute()
-        self.log("hp_metric", res, on_step=True, on_epoch=True, prog_bar=True)
+        self.log("hp_metric", res, on_epoch=True, prog_bar=True)
 
     def test_step(self, batch: Any, batch_idx: int):
         loss, preds, targets = self.step(batch)

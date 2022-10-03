@@ -9,7 +9,9 @@ root = pyrootutils.setup_root(
 
 from typing import List, Tuple
 
+from PIL import Image
 import torch
+import torchvision.transforms as transforms
 import hydra
 import gradio as gr
 from omegaconf import DictConfig
@@ -17,6 +19,8 @@ from omegaconf import DictConfig
 from src import utils
 
 log = utils.get_pylogger(__name__)
+
+cifar10_labels = ["airplane", "automobile", "bird", "cat", "deer", "dog", "frog", "horse", "ship", "truck"]
 
 def demo(cfg: DictConfig) -> Tuple[dict, dict]:
     """Demo function.
@@ -36,21 +40,21 @@ def demo(cfg: DictConfig) -> Tuple[dict, dict]:
 
     log.info(f"Loaded Model: {model}")
 
-    def recognize_digit(image):
+    def recognize_image(image:Image):
         if image is None:
             return None
-        image = torch.tensor(image[None, None, ...], dtype=torch.float32)
+        image = transforms.ToTensor()(image).unsqueeze(0)
         preds = model.forward_jit(image)
         preds = preds[0].tolist()
-        return {str(i): preds[i] for i in range(10)}
+        # print({cifar10_labels[i]: preds[i] for i in range(10)})
+        return {cifar10_labels[i]: preds[i] for i in range(10)}
 
-    im = gr.Image(shape=(28, 28), image_mode="L", invert_colors=True, source="canvas")
+    im = gr.Image(shape=(32, 32), type="pil")
 
     demo = gr.Interface(
-        fn=recognize_digit,
-        inputs=[im],
+        fn=recognize_image,
+        inputs=im,
         outputs=[gr.Label(num_top_classes=10)],
-        live=True,
     )
 
     demo.launch()
