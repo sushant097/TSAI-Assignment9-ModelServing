@@ -62,7 +62,7 @@ python src/train.py trainer.max_epochs=20 datamodule.batch_size=64
 ### Assignment Related
 **To Train the Cifar10 Torch Script**
 
-`python src/train_script.py ckpt_path=logs/train/runs experiment=cifar`
+`python src/train_script.py experiment=cifar`
 
 It saves the `model.script.pt` model inside `logs/train/runs/*`
 
@@ -77,6 +77,9 @@ best_params:
   datamodule.batch_size: 128
 best_value: 0.8082000017166138
 ```
+
+**Run the Tensorboard**
+`tensorboard --logdir=logs/train/runs --bind_all`
 
 **To run the inference Cifar10 scripted model**
 

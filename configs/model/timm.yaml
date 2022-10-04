@@ -3,9 +3,9 @@ _target_: src.models.timm_module.TIMMLitModule
 model_name: resnet18
 
 optimizer:
-  _target_: torch.optim.Adam
+  _target_: torch.optim.SGD
   _partial_: true
-  lr: 0.001
+  lr: 0.035
   weight_decay: 0.0
 
 

@@ -18,14 +18,9 @@ tags: ["cifar10-timm"]
 seed: 12345
 
 
-model:
-  net:
-    model_name: resnet18
-    pretrained: True
-    num_classes: 10
 
 datamodule:
-  batch_size: 64
+  batch_size: 128
 
 logger:
   wandb:
