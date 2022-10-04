@@ -62,9 +62,21 @@ python src/train.py trainer.max_epochs=20 datamodule.batch_size=64
 ### Assignment Related
 **To Train the Cifar10 Torch Script**
 
-`python src/train_script.py ckpt_path=/logs/main/... experiment=cifar`
+`python src/train_script.py ckpt_path=logs/train/runs experiment=cifar`
 
 It saves the `model.script.pt` model inside `logs/train/runs/*`
+
+Using best hyperparmeters searched on Assignment 3
+```bash
+My Final Optuna sweeper parameter search output:
+
+name: optuna
+best_params:
+  model.optimizer._target_: torch.optim.SGD
+  model.optimizer.lr: 0.03584594526879088
+  datamodule.batch_size: 128
+best_value: 0.8082000017166138
+```
 
 **To run the inference Cifar10 scripted model**
 
