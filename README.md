@@ -67,10 +67,8 @@ python src/train.py trainer.max_epochs=20 datamodule.batch_size=64
 It saves the `model.script.pt` model inside `logs/train/runs/*`
 
 Using best hyperparmeters searched on Assignment 3
-```bash
-My Final Optuna sweeper parameter search output:
 
-name: optuna
+```bash
 best_params:
   model.optimizer._target_: torch.optim.SGD
   model.optimizer.lr: 0.03584594526879088
