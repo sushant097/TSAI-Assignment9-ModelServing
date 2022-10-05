@@ -15,7 +15,7 @@ def demo():
     Returns:
         Tuple[dict, dict]: Dict with metrics and dict with all instantiated objects.
     """
-    model = torch.jit.load("model.script.pt")
+    model = torch.jit.load("model_script.pt")
 
     def recognize_image(image):
         if image is None:

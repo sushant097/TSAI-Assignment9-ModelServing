@@ -76,6 +76,11 @@ best_params:
 best_value: 0.8082000017166138
 ```
 
+**To train the timm resnet18 model**
+` python src/train_script.py experiment=example_timm trainer=gpu`
+
+It saves the trained scripted model and best torch model.
+
 **Run the Tensorboard**
 `tensorboard --logdir=logs/train/runs --bind_all`
 
@@ -84,13 +89,20 @@ best_value: 0.8082000017166138
 `python .\src\demo_scripted.py ckpt_path=D:\EMLO_V2\Assignment\TSAI-Assignment4-Deployment-for-Demos\logs\train\runs\2022-09-29_07-05-14\model.script.pt
 `
 
-Pack the inference scripted model inside the dockerize folder.
-The non-compressed docker image size is 1.09 GB.
+##### Pack the inference scripted model inside the dockerize folder.
 
 **Build the docker for only prediction**
 
 `make build` or `docker build -t deploy dockerize/`
 
-**RUN the docker container**
-`docker run -t -p 8080:8080 deploy:latest`
 
+**Pull from the DockerHub**
+`docker pull sushant097/my_repo:deploy`
+
+**RUN the docker container**
+`docker run -t -p 8080:8080 sushant097/my_repo:deploy`
+
+**The uncompressed image size is: 1.09GB**
+
+
+#### Packing Traced Model

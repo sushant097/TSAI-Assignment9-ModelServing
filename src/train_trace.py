@@ -102,9 +102,15 @@ def train(cfg: DictConfig) -> Tuple[dict, dict]:
 
     log.info("Tracing Model ...")
 
-    scripted_model = model.to_torchscript(method='trace') # save the trace model
-    torch.jit.save(scripted_model, f"{cfg.paths.output_dir}/model.trace.pt")
+    model.eval()
+    # https://pytorch.org/docs/stable/generated/torch.jit.trace.html
+    # https://pytorch-lightning.readthedocs.io/en/stable/common/lightning_module.html
+    example_forward_input = torch.rand(1, 3, 32, 32) # batch_size, c, width, height
 
+    model.to_torchscript(file_path=f"{cfg.paths.output_dir}/model.trace.pt")
+    torch.jit.save(model.to_torchscript(file_path=f"{cfg.paths.output_dir}/model_trace.pt",
+                                        method='trace',
+                                        example_inputs = example_forward_input))
     log.info(f"Saving traced model to {cfg.paths.output_dir}/model.trace.pt")
 
     if cfg.get("test"):

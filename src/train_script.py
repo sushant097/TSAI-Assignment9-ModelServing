@@ -102,10 +102,13 @@ def train(cfg: DictConfig) -> Tuple[dict, dict]:
 
     log.info("Scripting Model ...")
 
+    # set to evaluation model before scripting
+    model.eval()
     scripted_model = model.to_torchscript(method='script')
+
     torch.jit.save(scripted_model, f"{cfg.paths.output_dir}/model.script.pt")
 
-    log.info(f"Saving traced model to {cfg.paths.output_dir}/model.script.pt")
+    log.info(f"Saving Scripted model to {cfg.paths.output_dir}/model.script.pt")
 
     if cfg.get("test"):
         log.info("Starting testing!")

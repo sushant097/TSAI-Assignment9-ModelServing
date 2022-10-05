@@ -1,6 +1,6 @@
 import torch
-import torchvision.transforms as transforms
 import gradio as gr
+import numpy as np
 
 
 
@@ -15,13 +15,13 @@ def demo():
     Returns:
         Tuple[dict, dict]: Dict with metrics and dict with all instantiated objects.
     """
-    model = torch.jit.load("model.script.pt")
+    model = torch.jit.load("model_script.pt")
 
     def recognize_image(image):
         if image is None:
             return None
         # transform inside the torch traced model
-        image = transforms.ToTensor()(image).unsqueeze(0)
+        image = np.expand_dim(image, axis=0)
         preds = model.forward_jit(image)
         preds = preds[0].tolist()
         # print({cifar10_labels[i]: preds[i] for i in range(10)})

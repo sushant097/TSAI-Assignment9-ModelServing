@@ -2,9 +2,10 @@ from typing import Any, List
 
 import torch
 import torch.nn.functional as F
-import timm
+import torchvision.transforms as T
 from pytorch_lightning import LightningModule
 from torchmetrics import MaxMetric, MeanMetric
+import timm
 from torchmetrics.classification.accuracy import Accuracy
 
 
@@ -20,8 +21,15 @@ class TIMMLitModule(LightningModule):
         # this line allows to access init params with 'self.hparams' attribute
         # also ensures init params will be stored in ckpt
         self.save_hyperparameters(logger=False, ignore=["net"])
+        # scriptable=True for script model
+        # exportable=True for traced model
+        self.net = timm.create_model(model_name, pretrained=True, num_classes=10, scriptable=True)
 
-        self.net = timm.create_model(model_name, pretrained=True, num_classes=10)
+        # # transform
+        # config = resolve_data_config({}, model=self.net)
+        # self.predict_transform = create_transform(**config)
+        # self.predict_transform = T.Normalize((0.1307,), (0.3081,))
+
 
         # loss function
         self.criterion = torch.nn.CrossEntropyLoss()
@@ -45,9 +53,6 @@ class TIMMLitModule(LightningModule):
     @torch.jit.export
     def forward_jit(self, x: torch.Tensor):
         with torch.no_grad():
-            # transform the inputs
-            x = self.predict_transform(x)
-
             # forward pass
             logits = self(x)
             preds = F.softmax(logits, dim=-1)
