@@ -23,7 +23,7 @@ class TIMMLitModule(LightningModule):
         self.save_hyperparameters(logger=False, ignore=["net"])
         # scriptable=True for script model
         # exportable=True for traced model
-        self.net = timm.create_model(model_name, pretrained=True, num_classes=10, scriptable=True)
+        self.net = timm.create_model(model_name, pretrained=True, num_classes=10, scriptable=True, exportable=True)
 
         # # transform
         # config = resolve_data_config({}, model=self.net)
