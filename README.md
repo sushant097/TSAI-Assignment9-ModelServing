@@ -15,7 +15,8 @@
 
 ## Description
 
-What it does
+We build cifar10 timm module, convert it into script and trace model. Upload docker image to dockerhub.
+
 
 ## How to run
 
@@ -79,21 +80,16 @@ best_value: 0.8082000017166138
 **To train the timm resnet18 model**
 ` python src/train_script.py experiment=example_timm trainer=gpu`
 
-It saves the trained scripted model and best torch model.
+It exports and saves the trained resnet18 timm as scripted model and best torch model.
 
 **Run the Tensorboard**
 `tensorboard --logdir=logs/train/runs --bind_all`
-
-**To run the inference Cifar10 scripted model**
-
-`python .\src\demo_scripted.py ckpt_path=D:\EMLO_V2\Assignment\TSAI-Assignment4-Deployment-for-Demos\logs\train\runs\2022-09-29_07-05-14\model.script.pt
-`
 
 ##### Pack the inference scripted model inside the dockerize folder.
 
 **Build the docker for only prediction**
 
-`make build` or `docker build -t deploy dockerize/`
+`make build` or `docker build -t sushant097/my_repo:deploy dockerize/`
 
 
 **Pull from the DockerHub**
@@ -104,5 +100,26 @@ It saves the trained scripted model and best torch model.
 
 **The uncompressed image size is: 1.09GB**
 
+### Push model, logs and data to google drive (using dvc)
+1. Untrack logs/data from git : `git rm -r --cached logs` and `git rm -r --cached data`
+2. Add logs to dvc: `dvc add logs` and `dvc add data`
+2.1. `git add . ` and `dvc config core.autostage true` : As logs folder from being tracked by git and then let dvc take care of it
+3. Add a remote: `dvc remote add gdrive gdrive://1nqYL96VXmfecRur899q5YmgQ3IOnk0m7`
+4. Push logs and other tracked files by dvc in gdrive: `dvc push -r gdrive`
+5. Now, whenever logs/data is deleted then, we can directly pull logs from dvc as: `dvc pull -r gdrive`
+
+### Tensorboard 
+`tensorboard --logdir logs/train --bind_all`
+
+### Tensorboard Dev
+```bash
+tensorboard dev upload --logdir logs \
+    --name "My Cifar10 TSAI Assignment4 Deployment for Demos experiment" \
+    --description "Visualization of Deployment"
+```
+**My Tensorboard logs at: https://tensorboard.dev/experiment/xORFVXtbRluBJ6CVN3GgjA/**
 
 #### Packing Traced Model
+
+**To train the timm resnet18 model**
+` python src/train_script.py experiment=example_timm trainer=gpu`

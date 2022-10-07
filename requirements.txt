@@ -4,7 +4,7 @@
 pytorch-lightning==1.7.1
 torchmetrics==0.9.3
 timm
-#dvc
+dvc
 #-------- dvc-gdrive
 protobuf
 #----protobuf==3.20.*
