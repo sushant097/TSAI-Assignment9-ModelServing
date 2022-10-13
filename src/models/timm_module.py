@@ -53,7 +53,7 @@ class TIMMLitModule(LightningModule):
     @torch.jit.export
     def forward_jit(self, x: torch.Tensor):
         # transform the inputs
-        x = x.permute(0, 3, 1, 2).div(255)
+        # x = x.permute(0, 3, 1, 2).div(255)
         x = self.normalize(x)
 
         with torch.no_grad():
