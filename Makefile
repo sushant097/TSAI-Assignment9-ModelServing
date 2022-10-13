@@ -42,4 +42,4 @@ debug: ## Enter debugging mode with pdb
 
 # Makefile for docker build
 build:
-	docker build -t deploy dockerize/
+	docker build -t sushant097/my_repo:deploy dockerize/

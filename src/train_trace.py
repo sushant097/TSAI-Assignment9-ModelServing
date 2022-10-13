@@ -106,8 +106,8 @@ def train(cfg: DictConfig) -> Tuple[dict, dict]:
     # https://pytorch.org/docs/stable/generated/torch.jit.trace.html
     # https://pytorch-lightning.readthedocs.io/en/stable/common/lightning_module.html
     example_forward_input = torch.rand(1, 3, 32, 32) # batch_size, c, width, height
-    # traced_model = model.to_torchscript(method='trace', example_inputs = example_forward_input)
-    traced_model = torch.jit.trace(model, example_forward_input)
+    traced_model = model.to_torchscript(method='trace', example_inputs = example_forward_input)
+    # traced_model = torch.jit.trace(model, example_forward_input)
     print("Convert to trace model successful...")
     torch.jit.save(traced_model, f"{cfg.paths.output_dir}/model.trace.pt")
 

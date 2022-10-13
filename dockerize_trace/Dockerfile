@@ -13,4 +13,4 @@ COPY . .
 
 EXPOSE 8080
 
-ENTRYPOINT ["python", "demo_scripted.py"]
+ENTRYPOINT ["python", "demo_traced.py"]

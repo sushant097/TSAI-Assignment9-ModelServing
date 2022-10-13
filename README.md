@@ -98,7 +98,7 @@ It exports and saves the trained resnet18 timm as scripted model and best torch 
 **RUN the docker container**
 `docker run -t -p 8080:8080 sushant097/my_repo:deploy`
 
-**The uncompressed image size is: 1.09GB**
+**The uncompressed image size is: 1.14GB**
 
 **My Dockerfile is:**
 ```dockerfile
@@ -136,7 +136,7 @@ ENTRYPOINT ["python", "src/demo_scripted.py"]
 ### Tensorboard 
 `tensorboard --logdir logs/train --bind_all`
 
-### Tensorboard Dev
+### Tensorboard Dev 
 ```bash
 tensorboard dev upload --logdir logs \
     --name "My Cifar10 TSAI Assignment4 Deployment for Demos experiment" \
@@ -144,7 +144,8 @@ tensorboard dev upload --logdir logs \
 ```
 **My Tensorboard logs at: https://tensorboard.dev/experiment/xORFVXtbRluBJ6CVN3GgjA/**
 
+
 #### Packing Traced Model
 
 **To train the timm resnet18 model**
-` python src/train_script.py experiment=example_timm trainer=gpu`
+`python src/train_trace.py experiment=example_timm trainer=gpu`

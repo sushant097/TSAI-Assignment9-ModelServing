@@ -2,9 +2,9 @@ _target_: src.models.cifar_module.CIFARLitModule
 
 
 optimizer:
-  _target_: torch.optim.SGD
+  _target_: torch.optim.Adam
   _partial_: true
-  lr: 0.035
+  lr: 0.001
   weight_decay: 0.0
 
 net:

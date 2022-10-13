@@ -1,8 +1,6 @@
 from typing import Any, List
 
 import torch
-import torch.nn.functional as F
-import torchvision.transforms as T
 from pytorch_lightning import LightningModule
 from torchmetrics import MaxMetric, MeanMetric
 import timm
@@ -23,7 +21,7 @@ class TIMMLitModule(LightningModule):
         self.save_hyperparameters(logger=False, ignore=["net"])
         # scriptable=True for script model
         # exportable=True for traced model
-        self.net = timm.create_model(model_name, pretrained=True, num_classes=10, scriptable=True, exportable=True)
+        self.net = timm.create_model(model_name, pretrained=True, num_classes=10)
 
         # # transform
         # config = resolve_data_config({}, model=self.net)
@@ -49,15 +47,6 @@ class TIMMLitModule(LightningModule):
 
     def forward(self, x: torch.Tensor):
         return self.net(x)
-
-    @torch.jit.export
-    def forward_jit(self, x: torch.Tensor):
-        with torch.no_grad():
-            # forward pass
-            logits = self(x)
-            preds = F.softmax(logits, dim=-1)
-
-        return preds
 
     def on_train_start(self):
         # by default lightning executes validation step sanity checks before training starts,
