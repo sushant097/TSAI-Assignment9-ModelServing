@@ -1,6 +1,8 @@
 from typing import Any, List
 
 import torch
+import torch.nn.functional as F
+import torchvision.transforms as T
 from pytorch_lightning import LightningModule
 from torchmetrics import MaxMetric, MeanMetric
 import timm
@@ -26,7 +28,7 @@ class TIMMLitModule(LightningModule):
         # # transform
         # config = resolve_data_config({}, model=self.net)
         # self.predict_transform = create_transform(**config)
-        # self.predict_transform = T.Normalize((0.1307,), (0.3081,))
+        self.normalize = T.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010))
 
 
         # loss function
@@ -47,6 +49,18 @@ class TIMMLitModule(LightningModule):
 
     def forward(self, x: torch.Tensor):
         return self.net(x)
+
+    @torch.jit.export
+    def forward_jit(self, x: torch.Tensor):
+        # transform the inputs
+        x = x.permute(0, 3, 1, 2).div(255)
+        x = self.normalize(x)
+
+        with torch.no_grad():
+            logits = self(x)
+            preds = F.softmax(logits, dim=-1)
+
+        return preds
 
     def on_train_start(self):
         # by default lightning executes validation step sanity checks before training starts,
