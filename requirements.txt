@@ -10,6 +10,10 @@ protobuf
 #----protobuf==3.20.*
 #optuna
 gradio
+captum
+shap
+grad-cam
+opencv-python
 
 # --------- hydra --------- #
 hydra-core==1.2.0
