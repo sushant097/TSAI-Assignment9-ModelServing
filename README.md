@@ -1,6 +1,6 @@
 <div align="center">
 
-# Assignment  7- Model Explanability
+# Assignment  9- Model Serving
 
 
 
@@ -15,7 +15,7 @@
 
 ## Description
 
-Experiment that explains how the model predicts.
+Experiment that shows how to serve the model using torch serve.
 
 ## How to run
 
@@ -60,4 +60,4 @@ python src/train.py trainer.max_epochs=20 datamodule.batch_size=64
 ```
 
 ### Assignment Related
-See on `ModelExplanability/`
+python src/train_script.py experiment=example_timm
