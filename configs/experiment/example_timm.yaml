@@ -17,8 +17,6 @@ tags: ["cifar10-timm"]
 
 seed: 12345
 
-
-
 datamodule:
   batch_size: 128
 

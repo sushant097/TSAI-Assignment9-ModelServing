@@ -34,3 +34,4 @@ class ImageClassifier(VisionHandler):
         probs = probs.tolist()
         classes = classes.tolist()
         return map_class_to_label(probs, self.mapping, classes)
+
