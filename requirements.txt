@@ -13,6 +13,8 @@ gradio
 torchserve
 torch-model-archiver
 torch-workflow-archiver
+captum==0.5.0
+grad_cam==1.4.6
 
 # --------- hydra --------- #
 hydra-core==1.2.0

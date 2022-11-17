@@ -1,0 +1,37 @@
+build/
+dist/
+*pyc
+*.lock
+*__pycache__*
+*.egg-info/
+.idea
+*htmlcov*
+.coverage
+.github/actions/
+.github/.DS_Store
+.DS_Store
+frontend/server/src/main/java/org/pytorch/serve/grpc/
+serving-sdk/target
+plugins/.gradle
+*.pem
+*.backup
+docs/sphinx/src/
+ts_scripts/spellcheck_conf/wordlist.dic
+
+# Postman files
+test/artifacts/
+test/logs/
+test/model_store/
+test/ts_console.log
+test/config.properties
+
+
+.vscode
+.scratch/
+
+# Custom benchmark artifacts
+instances.yaml
+instances.yaml.backup
+
+## Models
+*.pt

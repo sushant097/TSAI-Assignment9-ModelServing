@@ -60,4 +60,15 @@ python src/train.py trainer.max_epochs=20 datamodule.batch_size=64
 ```
 
 ### Assignment Related
-python src/train_script.py experiment=example_timm
+`python src/train_script.py experiment=example_timm trainer=gpu datamodule.batch_size=10000 trainer=gpu`
+
+**Convert scripted model to mar file**
+```bash
+torch-model-archiver --model-name cifar_basic --version 1.0 --serialized-file D:\EMLO_V2\Assignment\TSAI_Assignment9-ModelServing\logs\train\runs\2022-11-16_15-49-25\model.script.pt --handler D:\EMLO_V2\Assignment\TSAI_Assignment9-ModelServing\src\torch_handlers\cifar_handler.py --extra-files D:\EMLO_V2\Assignment\TSAI_Assignment9-ModelServing\src\torch_handlers\cifar_classes\index_to_name.json
+```
+
+`docker run -it --rm --net=host -v `pwd`:/opt/src pytorch/torchserve:latest bash`
+`cd /opt/src`
+
+torchserve --start --model-store model_store --models cifar=cifar_basic.mar
+
