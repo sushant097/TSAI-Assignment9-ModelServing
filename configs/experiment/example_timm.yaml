@@ -19,7 +19,7 @@ seed: 12345
 
 trainer:
   min_epochs: 10
-  max_epochs: 25
+  max_epochs: 50
 
 datamodule:
   batch_size: 128
