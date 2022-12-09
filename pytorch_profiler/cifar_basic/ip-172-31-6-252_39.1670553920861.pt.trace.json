@@ -1,0 +1,5370 @@
+
+{
+  "schemaVersion": 1,
+  "traceEvents": [
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::zeros", "pid": 39, "tid": 39,
+    "ts": 1670553920829586, "dur": 66,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1603,
+      "Input Dims": [[], [], [], [], []], "Input type": ["", "Scalar", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920829593, "dur": 9,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1604,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "", "", "Scalar", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::zero_", "pid": 39, "tid": 39,
+    "ts": 1670553920829649, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1605,
+      "Input Dims": [[1]], "Input type": ["float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", 
+    "name": "preprocess", "pid": 39, "tid": 39,
+    "ts": 1670553920829695, "dur": 921,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1606
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920829699, "dur": 4,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1607,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 39, "tid": 39,
+    "ts": 1670553920830186, "dur": 13,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1608,
+      "Input Dims": [[32, 32, 3], []], "Input type": ["unsigned char", ""], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::permute", "pid": 39, "tid": 39,
+    "ts": 1670553920830208, "dur": 12,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1609,
+      "Input Dims": [[32, 32, 3], []], "Input type": ["unsigned char", ""], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::as_strided", "pid": 39, "tid": 39,
+    "ts": 1670553920830216, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1610,
+      "Input Dims": [[32, 32, 3], [], [], []], "Input type": ["unsigned char", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::contiguous", "pid": 39, "tid": 39,
+    "ts": 1670553920830227, "dur": 42,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1611,
+      "Input Dims": [[3, 32, 32], []], "Input type": ["unsigned char", "Scalar"], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clone", "pid": 39, "tid": 39,
+    "ts": 1670553920830231, "dur": 37,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1612,
+      "Input Dims": [[3, 32, 32], []], "Input type": ["unsigned char", "Scalar"], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 39, "tid": 39,
+    "ts": 1670553920830236, "dur": 8,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1613,
+      "Input Dims": [[3, 32, 32], [], [], [], [], []], "Input type": ["unsigned char", "Scalar", "Scalar", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920830239, "dur": 4,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1614,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::copy_", "pid": 39, "tid": 39,
+    "ts": 1670553920830248, "dur": 20,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1615,
+      "Input Dims": [[3, 32, 32], [3, 32, 32], []], "Input type": ["unsigned char", "unsigned char", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::to", "pid": 39, "tid": 39,
+    "ts": 1670553920830288, "dur": 21,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1616,
+      "Input Dims": [[3, 32, 32], [], [], [], []], "Input type": ["unsigned char", "Scalar", "Scalar", "Scalar", ""], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_to_copy", "pid": 39, "tid": 39,
+    "ts": 1670553920830291, "dur": 17,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1617,
+      "Input Dims": [[3, 32, 32], [], [], [], [], [], []], "Input type": ["unsigned char", "Scalar", "", "", "", "Scalar", ""], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_strided", "pid": 39, "tid": 39,
+    "ts": 1670553920830297, "dur": 4,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1618,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "", "Scalar", "Scalar", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::copy_", "pid": 39, "tid": 39,
+    "ts": 1670553920830302, "dur": 6,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1619,
+      "Input Dims": [[3, 32, 32], [3, 32, 32], []], "Input type": ["float", "unsigned char", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::div", "pid": 39, "tid": 39,
+    "ts": 1670553920830319, "dur": 22,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1620,
+      "Input Dims": [[3, 32, 32], []], "Input type": ["float", "long int"], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::to", "pid": 39, "tid": 39,
+    "ts": 1670553920830325, "dur": 8,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1621,
+      "Input Dims": [[], [], [], [], []], "Input type": ["long int", "Scalar", "Scalar", "Scalar", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_to_copy", "pid": 39, "tid": 39,
+    "ts": 1670553920830326, "dur": 7,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1622,
+      "Input Dims": [[], [], [], [], [], [], []], "Input type": ["long int", "Scalar", "", "", "", "Scalar", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_strided", "pid": 39, "tid": 39,
+    "ts": 1670553920830328, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1623,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "", "Scalar", "Scalar", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::copy_", "pid": 39, "tid": 39,
+    "ts": 1670553920830331, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1624,
+      "Input Dims": [[], [], []], "Input type": ["float", "long int", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clone", "pid": 39, "tid": 39,
+    "ts": 1670553920830385, "dur": 11,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1625,
+      "Input Dims": [[3, 32, 32], []], "Input type": ["float", ""], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_strided", "pid": 39, "tid": 39,
+    "ts": 1670553920830387, "dur": 4,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1626,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "", "Scalar", "Scalar", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::copy_", "pid": 39, "tid": 39,
+    "ts": 1670553920830392, "dur": 4,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1627,
+      "Input Dims": [[3, 32, 32], [3, 32, 32], []], "Input type": ["float", "float", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920830412, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1628,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "Scalar", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::to", "pid": 39, "tid": 39,
+    "ts": 1670553920830418, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1629,
+      "Input Dims": [[3], [], [], [], [], []], "Input type": ["float", "", "Scalar", "Scalar", "Scalar", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::lift", "pid": 39, "tid": 39,
+    "ts": 1670553920830421, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1630,
+      "Input Dims": [[3]], "Input type": ["float"], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920830428, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1631,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "Scalar", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::to", "pid": 39, "tid": 39,
+    "ts": 1670553920830432, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1632,
+      "Input Dims": [[3], [], [], [], [], []], "Input type": ["float", "", "Scalar", "Scalar", "Scalar", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::lift", "pid": 39, "tid": 39,
+    "ts": 1670553920830433, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1633,
+      "Input Dims": [[3]], "Input type": ["float"], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::eq", "pid": 39, "tid": 39,
+    "ts": 1670553920830441, "dur": 24,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1634,
+      "Input Dims": [[3], []], "Input type": ["float", "Scalar"], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::to", "pid": 39, "tid": 39,
+    "ts": 1670553920830448, "dur": 9,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1635,
+      "Input Dims": [[], [], [], [], []], "Input type": ["long int", "Scalar", "Scalar", "Scalar", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_to_copy", "pid": 39, "tid": 39,
+    "ts": 1670553920830449, "dur": 8,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1636,
+      "Input Dims": [[], [], [], [], [], [], []], "Input type": ["long int", "Scalar", "", "", "", "Scalar", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_strided", "pid": 39, "tid": 39,
+    "ts": 1670553920830451, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1637,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "", "Scalar", "Scalar", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::copy_", "pid": 39, "tid": 39,
+    "ts": 1670553920830455, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1638,
+      "Input Dims": [[], [], []], "Input type": ["float", "long int", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::any", "pid": 39, "tid": 39,
+    "ts": 1670553920830470, "dur": 16,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1639,
+      "Input Dims": [[3]], "Input type": ["bool"], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::as_strided", "pid": 39, "tid": 39,
+    "ts": 1670553920830478, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1640,
+      "Input Dims": [[], [], [], []], "Input type": ["bool", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::fill_", "pid": 39, "tid": 39,
+    "ts": 1670553920830483, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1641,
+      "Input Dims": [[1], []], "Input type": ["bool", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::is_nonzero", "pid": 39, "tid": 39,
+    "ts": 1670553920830492, "dur": 6,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1642,
+      "Input Dims": [[]], "Input type": ["bool"], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::item", "pid": 39, "tid": 39,
+    "ts": 1670553920830494, "dur": 4,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1643,
+      "Input Dims": [[]], "Input type": ["bool"], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_local_scalar_dense", "pid": 39, "tid": 39,
+    "ts": 1670553920830496, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1644,
+      "Input Dims": [[]], "Input type": ["bool"], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 39, "tid": 39,
+    "ts": 1670553920830504, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1645,
+      "Input Dims": [[3], []], "Input type": ["float", ""], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 39, "tid": 39,
+    "ts": 1670553920830510, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1646,
+      "Input Dims": [[3], []], "Input type": ["float", ""], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::sub_", "pid": 39, "tid": 39,
+    "ts": 1670553920830516, "dur": 11,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1647,
+      "Input Dims": [[3, 32, 32], [3, 1, 1], []], "Input type": ["float", "float", "Scalar"], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::div_", "pid": 39, "tid": 39,
+    "ts": 1670553920830531, "dur": 6,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1648,
+      "Input Dims": [[3, 32, 32], [3, 1, 1]], "Input type": ["float", "float"], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::stack", "pid": 39, "tid": 39,
+    "ts": 1670553920830568, "dur": 23,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1649,
+      "Input Dims": [[], []], "Input type": ["TensorList", "Scalar"], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::cat", "pid": 39, "tid": 39,
+    "ts": 1670553920830574, "dur": 12,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1650,
+      "Input Dims": [[], []], "Input type": ["TensorList", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 39, "tid": 39,
+    "ts": 1670553920830588, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1651,
+      "Input Dims": [[3, 32, 32], []], "Input type": ["float", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::to", "pid": 39, "tid": 39,
+    "ts": 1670553920830598, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1652,
+      "Input Dims": [[1, 3, 32, 32], [], [], [], [], [], [], []], "Input type": ["float", "Scalar", "Scalar", "", "", "Scalar", "Scalar", ""], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::zeros", "pid": 39, "tid": 39,
+    "ts": 1670553920830637, "dur": 7,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1653,
+      "Input Dims": [[], [], [], [], []], "Input type": ["", "Scalar", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920830640, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1654,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "", "", "Scalar", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::zero_", "pid": 39, "tid": 39,
+    "ts": 1670553920830643, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1655,
+      "Input Dims": [[1]], "Input type": ["float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", 
+    "name": "inference", "pid": 39, "tid": 39,
+    "ts": 1670553920830658, "dur": 8802,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1656
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920830659, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1657,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::to", "pid": 39, "tid": 39,
+    "ts": 1670553920830686, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1658,
+      "Input Dims": [[1, 3, 32, 32], [], [], [], [], [], [], []], "Input type": ["float", "Scalar", "Scalar", "", "", "Scalar", "Scalar", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "forward", "pid": 39, "tid": 39,
+    "ts": 1670553920830720, "dur": 8676,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1659,
+      "Input Dims": [[], [1, 3, 32, 32]], "Input type": ["", "float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920830730, "dur": 349,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1660,
+      "Input Dims": [[1, 3, 32, 32], [64, 3, 7, 7], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920830739, "dur": 338,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1661,
+      "Input Dims": [[1, 3, 32, 32], [64, 3, 7, 7], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920830746, "dur": 330,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1662,
+      "Input Dims": [[1, 3, 32, 32], [64, 3, 7, 7], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::mkldnn_convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920830757, "dur": 317,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1663,
+      "Input Dims": [[1, 3, 32, 32], [64, 3, 7, 7], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920830760, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1664,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920831021, "dur": 6,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1665,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::as_strided_", "pid": 39, "tid": 39,
+    "ts": 1670553920831066, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1666,
+      "Input Dims": [[1, 64, 16, 16], [], [], []], "Input type": ["float", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920831087, "dur": 58,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1667,
+      "Input Dims": [[1, 64, 16, 16], [64], [64], [64], [64], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 39, "tid": 39,
+    "ts": 1670553920831091, "dur": 51,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1668,
+      "Input Dims": [[1, 64, 16, 16], [64], [64], [64], [64], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920831093, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1669,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::native_batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920831098, "dur": 43,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1670,
+      "Input Dims": [[1, 64, 16, 16], [64], [64], [64], [64], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920831106, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1671,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920831107, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1672,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 39, "tid": 39,
+    "ts": 1670553920831110, "dur": 9,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1673,
+      "Input Dims": [[1, 64, 16, 16], [], [], [], [], []], "Input type": ["float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920831112, "dur": 6,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1674,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920831122, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1675,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920831125, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1676,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 39, "tid": 39,
+    "ts": 1670553920831147, "dur": 16,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1677,
+      "Input Dims": [[1, 64, 16, 16]], "Input type": ["float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 39, "tid": 39,
+    "ts": 1670553920831153, "dur": 9,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1678,
+      "Input Dims": [[1, 64, 16, 16], []], "Input type": ["float", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::max_pool2d", "pid": 39, "tid": 39,
+    "ts": 1670553920831166, "dur": 253,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1679,
+      "Input Dims": [[1, 64, 16, 16], [], [], [], [], []], "Input type": ["float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::max_pool2d_with_indices", "pid": 39, "tid": 39,
+    "ts": 1670553920831172, "dur": 243,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1680,
+      "Input Dims": [[1, 64, 16, 16], [], [], [], [], []], "Input type": ["float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920831428, "dur": 274,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1681,
+      "Input Dims": [[1, 64, 8, 8], [64, 64, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920831434, "dur": 267,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1682,
+      "Input Dims": [[1, 64, 8, 8], [64, 64, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920831442, "dur": 257,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1683,
+      "Input Dims": [[1, 64, 8, 8], [64, 64, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_nnpack_available", "pid": 39, "tid": 39,
+    "ts": 1670553920831450, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1684
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::thnn_conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920831456, "dur": 242,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1685,
+      "Input Dims": [[1, 64, 8, 8], [64, 64, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_slow_conv2d_forward", "pid": 39, "tid": 39,
+    "ts": 1670553920831460, "dur": 237,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1686,
+      "Input Dims": [[1, 64, 8, 8], [64, 64, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920831463, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1687,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 39, "tid": 39,
+    "ts": 1670553920831468, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1688,
+      "Input Dims": [[64, 64, 3, 3], []], "Input type": ["float", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920831474, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1689,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 39, "tid": 39,
+    "ts": 1670553920831600, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1690,
+      "Input Dims": [[0], [], []], "Input type": ["float", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920831710, "dur": 45,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1691,
+      "Input Dims": [[1, 64, 8, 8], [64], [64], [64], [64], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 39, "tid": 39,
+    "ts": 1670553920831713, "dur": 40,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1692,
+      "Input Dims": [[1, 64, 8, 8], [64], [64], [64], [64], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920831716, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1693,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::native_batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920831721, "dur": 31,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1694,
+      "Input Dims": [[1, 64, 8, 8], [64], [64], [64], [64], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920831726, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1695,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920831728, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1696,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 39, "tid": 39,
+    "ts": 1670553920831731, "dur": 8,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1697,
+      "Input Dims": [[1, 64, 8, 8], [], [], [], [], []], "Input type": ["float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920831733, "dur": 6,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1698,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920831741, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1699,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920831744, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1700,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 39, "tid": 39,
+    "ts": 1670553920831756, "dur": 11,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1701,
+      "Input Dims": [[1, 64, 8, 8]], "Input type": ["float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 39, "tid": 39,
+    "ts": 1670553920831760, "dur": 7,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1702,
+      "Input Dims": [[1, 64, 8, 8], []], "Input type": ["float", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920831771, "dur": 298,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1703,
+      "Input Dims": [[1, 64, 8, 8], [64, 64, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920831774, "dur": 293,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1704,
+      "Input Dims": [[1, 64, 8, 8], [64, 64, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920831780, "dur": 285,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1705,
+      "Input Dims": [[1, 64, 8, 8], [64, 64, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_nnpack_available", "pid": 39, "tid": 39,
+    "ts": 1670553920831786, "dur": 52,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1706
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::thnn_conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920831844, "dur": 220,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1707,
+      "Input Dims": [[1, 64, 8, 8], [64, 64, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_slow_conv2d_forward", "pid": 39, "tid": 39,
+    "ts": 1670553920831846, "dur": 217,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1708,
+      "Input Dims": [[1, 64, 8, 8], [64, 64, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920831849, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1709,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 39, "tid": 39,
+    "ts": 1670553920831853, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1710,
+      "Input Dims": [[64, 64, 3, 3], []], "Input type": ["float", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920831858, "dur": 4,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1711,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 39, "tid": 39,
+    "ts": 1670553920831981, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1712,
+      "Input Dims": [[0], [], []], "Input type": ["float", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920832077, "dur": 44,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1713,
+      "Input Dims": [[1, 64, 8, 8], [64], [64], [64], [64], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 39, "tid": 39,
+    "ts": 1670553920832080, "dur": 38,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1714,
+      "Input Dims": [[1, 64, 8, 8], [64], [64], [64], [64], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920832083, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1715,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::native_batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920832087, "dur": 31,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1716,
+      "Input Dims": [[1, 64, 8, 8], [64], [64], [64], [64], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920832093, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1717,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920832095, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1718,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 39, "tid": 39,
+    "ts": 1670553920832097, "dur": 8,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1719,
+      "Input Dims": [[1, 64, 8, 8], [], [], [], [], []], "Input type": ["float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920832099, "dur": 5,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1720,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920832106, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1721,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920832109, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1722,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add_", "pid": 39, "tid": 39,
+    "ts": 1670553920832123, "dur": 13,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1723,
+      "Input Dims": [[1, 64, 8, 8], [1, 64, 8, 8], []], "Input type": ["float", "float", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 39, "tid": 39,
+    "ts": 1670553920832137, "dur": 8,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1724,
+      "Input Dims": [[1, 64, 8, 8]], "Input type": ["float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 39, "tid": 39,
+    "ts": 1670553920832140, "dur": 4,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1725,
+      "Input Dims": [[1, 64, 8, 8], []], "Input type": ["float", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920832149, "dur": 227,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1726,
+      "Input Dims": [[1, 64, 8, 8], [64, 64, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920832153, "dur": 222,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1727,
+      "Input Dims": [[1, 64, 8, 8], [64, 64, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920832159, "dur": 214,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1728,
+      "Input Dims": [[1, 64, 8, 8], [64, 64, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_nnpack_available", "pid": 39, "tid": 39,
+    "ts": 1670553920832164, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1729
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::thnn_conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920832168, "dur": 204,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1730,
+      "Input Dims": [[1, 64, 8, 8], [64, 64, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_slow_conv2d_forward", "pid": 39, "tid": 39,
+    "ts": 1670553920832170, "dur": 202,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1731,
+      "Input Dims": [[1, 64, 8, 8], [64, 64, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920832172, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1732,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 39, "tid": 39,
+    "ts": 1670553920832175, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1733,
+      "Input Dims": [[64, 64, 3, 3], []], "Input type": ["float", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920832179, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1734,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 39, "tid": 39,
+    "ts": 1670553920832294, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1735,
+      "Input Dims": [[0], [], []], "Input type": ["float", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920832384, "dur": 37,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1736,
+      "Input Dims": [[1, 64, 8, 8], [64], [64], [64], [64], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 39, "tid": 39,
+    "ts": 1670553920832386, "dur": 33,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1737,
+      "Input Dims": [[1, 64, 8, 8], [64], [64], [64], [64], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920832389, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1738,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::native_batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920832392, "dur": 27,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1739,
+      "Input Dims": [[1, 64, 8, 8], [64], [64], [64], [64], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920832397, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1740,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920832399, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1741,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 39, "tid": 39,
+    "ts": 1670553920832401, "dur": 7,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1742,
+      "Input Dims": [[1, 64, 8, 8], [], [], [], [], []], "Input type": ["float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920832403, "dur": 4,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1743,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920832410, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1744,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920832412, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1745,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 39, "tid": 39,
+    "ts": 1670553920832422, "dur": 10,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1746,
+      "Input Dims": [[1, 64, 8, 8]], "Input type": ["float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 39, "tid": 39,
+    "ts": 1670553920832425, "dur": 6,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1747,
+      "Input Dims": [[1, 64, 8, 8], []], "Input type": ["float", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920832435, "dur": 244,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1748,
+      "Input Dims": [[1, 64, 8, 8], [64, 64, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920832439, "dur": 239,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1749,
+      "Input Dims": [[1, 64, 8, 8], [64, 64, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920832443, "dur": 234,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1750,
+      "Input Dims": [[1, 64, 8, 8], [64, 64, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_nnpack_available", "pid": 39, "tid": 39,
+    "ts": 1670553920832449, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1751
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::thnn_conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920832452, "dur": 224,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1752,
+      "Input Dims": [[1, 64, 8, 8], [64, 64, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_slow_conv2d_forward", "pid": 39, "tid": 39,
+    "ts": 1670553920832454, "dur": 221,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1753,
+      "Input Dims": [[1, 64, 8, 8], [64, 64, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920832455, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1754,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 39, "tid": 39,
+    "ts": 1670553920832458, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1755,
+      "Input Dims": [[64, 64, 3, 3], []], "Input type": ["float", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920832462, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1756,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 39, "tid": 39,
+    "ts": 1670553920832591, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1757,
+      "Input Dims": [[0], [], []], "Input type": ["float", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920832686, "dur": 40,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1758,
+      "Input Dims": [[1, 64, 8, 8], [64], [64], [64], [64], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 39, "tid": 39,
+    "ts": 1670553920832688, "dur": 36,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1759,
+      "Input Dims": [[1, 64, 8, 8], [64], [64], [64], [64], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920832691, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1760,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::native_batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920832695, "dur": 29,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1761,
+      "Input Dims": [[1, 64, 8, 8], [64], [64], [64], [64], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920832700, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1762,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920832702, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1763,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 39, "tid": 39,
+    "ts": 1670553920832704, "dur": 6,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1764,
+      "Input Dims": [[1, 64, 8, 8], [], [], [], [], []], "Input type": ["float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920832706, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1765,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920832713, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1766,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920832717, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1767,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add_", "pid": 39, "tid": 39,
+    "ts": 1670553920832728, "dur": 11,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1768,
+      "Input Dims": [[1, 64, 8, 8], [1, 64, 8, 8], []], "Input type": ["float", "float", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 39, "tid": 39,
+    "ts": 1670553920832741, "dur": 6,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1769,
+      "Input Dims": [[1, 64, 8, 8]], "Input type": ["float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 39, "tid": 39,
+    "ts": 1670553920832743, "dur": 4,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1770,
+      "Input Dims": [[1, 64, 8, 8], []], "Input type": ["float", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920832753, "dur": 207,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1771,
+      "Input Dims": [[1, 64, 8, 8], [128, 64, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920832759, "dur": 200,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1772,
+      "Input Dims": [[1, 64, 8, 8], [128, 64, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920832763, "dur": 195,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1773,
+      "Input Dims": [[1, 64, 8, 8], [128, 64, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_nnpack_available", "pid": 39, "tid": 39,
+    "ts": 1670553920832769, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1774
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::thnn_conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920832772, "dur": 185,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1775,
+      "Input Dims": [[1, 64, 8, 8], [128, 64, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_slow_conv2d_forward", "pid": 39, "tid": 39,
+    "ts": 1670553920832774, "dur": 182,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1776,
+      "Input Dims": [[1, 64, 8, 8], [128, 64, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920832776, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1777,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 39, "tid": 39,
+    "ts": 1670553920832779, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1778,
+      "Input Dims": [[128, 64, 3, 3], []], "Input type": ["float", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920832783, "dur": 4,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1779,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 39, "tid": 39,
+    "ts": 1670553920832861, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1780,
+      "Input Dims": [[0], [], []], "Input type": ["float", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920832966, "dur": 30,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1781,
+      "Input Dims": [[1, 128, 4, 4], [128], [128], [128], [128], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 39, "tid": 39,
+    "ts": 1670553920832968, "dur": 27,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1782,
+      "Input Dims": [[1, 128, 4, 4], [128], [128], [128], [128], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920832971, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1783,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::native_batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920832973, "dur": 21,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1784,
+      "Input Dims": [[1, 128, 4, 4], [128], [128], [128], [128], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920832977, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1785,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920832978, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1786,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 39, "tid": 39,
+    "ts": 1670553920832981, "dur": 4,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1787,
+      "Input Dims": [[1, 128, 4, 4], [], [], [], [], []], "Input type": ["float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920832982, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1788,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920832988, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1789,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920832990, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1790,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 39, "tid": 39,
+    "ts": 1670553920832997, "dur": 7,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1791,
+      "Input Dims": [[1, 128, 4, 4]], "Input type": ["float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 39, "tid": 39,
+    "ts": 1670553920833000, "dur": 4,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1792,
+      "Input Dims": [[1, 128, 4, 4], []], "Input type": ["float", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920833006, "dur": 188,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1793,
+      "Input Dims": [[1, 128, 4, 4], [128, 128, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920833009, "dur": 184,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1794,
+      "Input Dims": [[1, 128, 4, 4], [128, 128, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920833012, "dur": 180,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1795,
+      "Input Dims": [[1, 128, 4, 4], [128, 128, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_nnpack_available", "pid": 39, "tid": 39,
+    "ts": 1670553920833016, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1796
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::thnn_conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920833019, "dur": 172,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1797,
+      "Input Dims": [[1, 128, 4, 4], [128, 128, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_slow_conv2d_forward", "pid": 39, "tid": 39,
+    "ts": 1670553920833020, "dur": 171,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1798,
+      "Input Dims": [[1, 128, 4, 4], [128, 128, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833021, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1799,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 39, "tid": 39,
+    "ts": 1670553920833023, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1800,
+      "Input Dims": [[128, 128, 3, 3], []], "Input type": ["float", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833026, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1801,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 39, "tid": 39,
+    "ts": 1670553920833116, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1802,
+      "Input Dims": [[0], [], []], "Input type": ["float", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920833197, "dur": 22,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1803,
+      "Input Dims": [[1, 128, 4, 4], [128], [128], [128], [128], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 39, "tid": 39,
+    "ts": 1670553920833199, "dur": 18,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1804,
+      "Input Dims": [[1, 128, 4, 4], [128], [128], [128], [128], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833200, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1805,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::native_batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920833202, "dur": 15,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1806,
+      "Input Dims": [[1, 128, 4, 4], [128], [128], [128], [128], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833204, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1807,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833205, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1808,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 39, "tid": 39,
+    "ts": 1670553920833207, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1809,
+      "Input Dims": [[1, 128, 4, 4], [], [], [], [], []], "Input type": ["float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833208, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1810,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833211, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1811,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833213, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1812,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920833222, "dur": 34,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1813,
+      "Input Dims": [[1, 64, 8, 8], [128, 64, 1, 1], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920833224, "dur": 31,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1814,
+      "Input Dims": [[1, 64, 8, 8], [128, 64, 1, 1], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920833226, "dur": 29,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1815,
+      "Input Dims": [[1, 64, 8, 8], [128, 64, 1, 1], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_nnpack_available", "pid": 39, "tid": 39,
+    "ts": 1670553920833229, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1816
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::thnn_conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920833231, "dur": 23,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1817,
+      "Input Dims": [[1, 64, 8, 8], [128, 64, 1, 1], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_slow_conv2d_forward", "pid": 39, "tid": 39,
+    "ts": 1670553920833232, "dur": 22,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1818,
+      "Input Dims": [[1, 64, 8, 8], [128, 64, 1, 1], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833233, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1819,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 39, "tid": 39,
+    "ts": 1670553920833234, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1820,
+      "Input Dims": [[128, 64, 1, 1], []], "Input type": ["float", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833236, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1821,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 39, "tid": 39,
+    "ts": 1670553920833245, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1822,
+      "Input Dims": [[0], [], []], "Input type": ["float", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920833259, "dur": 20,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1823,
+      "Input Dims": [[1, 128, 4, 4], [1, 128, 4, 4], [128], [128], [128], [128], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 39, "tid": 39,
+    "ts": 1670553920833260, "dur": 18,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1824,
+      "Input Dims": [[1, 128, 4, 4], [128], [128], [128], [128], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833261, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1825,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::native_batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920833262, "dur": 16,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1826,
+      "Input Dims": [[1, 128, 4, 4], [128], [128], [128], [128], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833264, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1827,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833266, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1828,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 39, "tid": 39,
+    "ts": 1670553920833268, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1829,
+      "Input Dims": [[1, 128, 4, 4], [], [], [], [], []], "Input type": ["float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833269, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1830,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833272, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1831,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833273, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1832,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add_", "pid": 39, "tid": 39,
+    "ts": 1670553920833280, "dur": 6,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1833,
+      "Input Dims": [[1, 128, 4, 4], [1, 128, 4, 4], []], "Input type": ["float", "float", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 39, "tid": 39,
+    "ts": 1670553920833287, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1834,
+      "Input Dims": [[1, 128, 4, 4]], "Input type": ["float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 39, "tid": 39,
+    "ts": 1670553920833288, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1835,
+      "Input Dims": [[1, 128, 4, 4], []], "Input type": ["float", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920833292, "dur": 215,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1836,
+      "Input Dims": [[1, 128, 4, 4], [128, 128, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920833294, "dur": 213,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1837,
+      "Input Dims": [[1, 128, 4, 4], [128, 128, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920833296, "dur": 210,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1838,
+      "Input Dims": [[1, 128, 4, 4], [128, 128, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_nnpack_available", "pid": 39, "tid": 39,
+    "ts": 1670553920833299, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1839
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::thnn_conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920833300, "dur": 205,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1840,
+      "Input Dims": [[1, 128, 4, 4], [128, 128, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_slow_conv2d_forward", "pid": 39, "tid": 39,
+    "ts": 1670553920833301, "dur": 204,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1841,
+      "Input Dims": [[1, 128, 4, 4], [128, 128, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833302, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1842,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 39, "tid": 39,
+    "ts": 1670553920833305, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1843,
+      "Input Dims": [[128, 128, 3, 3], []], "Input type": ["float", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833307, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1844,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 39, "tid": 39,
+    "ts": 1670553920833428, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1845,
+      "Input Dims": [[0], [], []], "Input type": ["float", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920833512, "dur": 26,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1846,
+      "Input Dims": [[1, 128, 4, 4], [128], [128], [128], [128], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 39, "tid": 39,
+    "ts": 1670553920833514, "dur": 23,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1847,
+      "Input Dims": [[1, 128, 4, 4], [128], [128], [128], [128], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833516, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1848,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::native_batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920833519, "dur": 17,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1849,
+      "Input Dims": [[1, 128, 4, 4], [128], [128], [128], [128], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833522, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1850,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833523, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1851,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 39, "tid": 39,
+    "ts": 1670553920833524, "dur": 5,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1852,
+      "Input Dims": [[1, 128, 4, 4], [], [], [], [], []], "Input type": ["float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833526, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1853,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833531, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1854,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833532, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1855,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 39, "tid": 39,
+    "ts": 1670553920833539, "dur": 6,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1856,
+      "Input Dims": [[1, 128, 4, 4]], "Input type": ["float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 39, "tid": 39,
+    "ts": 1670553920833541, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1857,
+      "Input Dims": [[1, 128, 4, 4], []], "Input type": ["float", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920833547, "dur": 180,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1858,
+      "Input Dims": [[1, 128, 4, 4], [128, 128, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920833549, "dur": 177,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1859,
+      "Input Dims": [[1, 128, 4, 4], [128, 128, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920833552, "dur": 174,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1860,
+      "Input Dims": [[1, 128, 4, 4], [128, 128, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_nnpack_available", "pid": 39, "tid": 39,
+    "ts": 1670553920833555, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1861
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::thnn_conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920833557, "dur": 168,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1862,
+      "Input Dims": [[1, 128, 4, 4], [128, 128, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_slow_conv2d_forward", "pid": 39, "tid": 39,
+    "ts": 1670553920833558, "dur": 167,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1863,
+      "Input Dims": [[1, 128, 4, 4], [128, 128, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833559, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1864,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 39, "tid": 39,
+    "ts": 1670553920833561, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1865,
+      "Input Dims": [[128, 128, 3, 3], []], "Input type": ["float", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833565, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1866,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 39, "tid": 39,
+    "ts": 1670553920833653, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1867,
+      "Input Dims": [[0], [], []], "Input type": ["float", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920833731, "dur": 19,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1868,
+      "Input Dims": [[1, 128, 4, 4], [128], [128], [128], [128], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 39, "tid": 39,
+    "ts": 1670553920833732, "dur": 17,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1869,
+      "Input Dims": [[1, 128, 4, 4], [128], [128], [128], [128], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833733, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1870,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::native_batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920833734, "dur": 14,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1871,
+      "Input Dims": [[1, 128, 4, 4], [128], [128], [128], [128], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833736, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1872,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833737, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1873,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 39, "tid": 39,
+    "ts": 1670553920833738, "dur": 4,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1874,
+      "Input Dims": [[1, 128, 4, 4], [], [], [], [], []], "Input type": ["float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833739, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1875,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833743, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1876,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833745, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1877,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add_", "pid": 39, "tid": 39,
+    "ts": 1670553920833751, "dur": 5,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1878,
+      "Input Dims": [[1, 128, 4, 4], [1, 128, 4, 4], []], "Input type": ["float", "float", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 39, "tid": 39,
+    "ts": 1670553920833757, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1879,
+      "Input Dims": [[1, 128, 4, 4]], "Input type": ["float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 39, "tid": 39,
+    "ts": 1670553920833758, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1880,
+      "Input Dims": [[1, 128, 4, 4], []], "Input type": ["float", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920833763, "dur": 216,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1881,
+      "Input Dims": [[1, 128, 4, 4], [256, 128, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920833765, "dur": 213,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1882,
+      "Input Dims": [[1, 128, 4, 4], [256, 128, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920833767, "dur": 211,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1883,
+      "Input Dims": [[1, 128, 4, 4], [256, 128, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_nnpack_available", "pid": 39, "tid": 39,
+    "ts": 1670553920833770, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1884
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::thnn_conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920833772, "dur": 205,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1885,
+      "Input Dims": [[1, 128, 4, 4], [256, 128, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_slow_conv2d_forward", "pid": 39, "tid": 39,
+    "ts": 1670553920833773, "dur": 204,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1886,
+      "Input Dims": [[1, 128, 4, 4], [256, 128, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833774, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1887,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 39, "tid": 39,
+    "ts": 1670553920833775, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1888,
+      "Input Dims": [[256, 128, 3, 3], []], "Input type": ["float", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833777, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1889,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 39, "tid": 39,
+    "ts": 1670553920833839, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1890,
+      "Input Dims": [[0], [], []], "Input type": ["float", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920833984, "dur": 29,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1891,
+      "Input Dims": [[1, 256, 2, 2], [256], [256], [256], [256], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 39, "tid": 39,
+    "ts": 1670553920833985, "dur": 27,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1892,
+      "Input Dims": [[1, 256, 2, 2], [256], [256], [256], [256], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833986, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1893,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::native_batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920833988, "dur": 23,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1894,
+      "Input Dims": [[1, 256, 2, 2], [256], [256], [256], [256], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833991, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1895,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833992, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1896,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 39, "tid": 39,
+    "ts": 1670553920833993, "dur": 5,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1897,
+      "Input Dims": [[1, 256, 2, 2], [], [], [], [], []], "Input type": ["float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833994, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1898,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920833999, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1899,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920834001, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1900,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 39, "tid": 39,
+    "ts": 1670553920834014, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1901,
+      "Input Dims": [[1, 256, 2, 2]], "Input type": ["float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 39, "tid": 39,
+    "ts": 1670553920834015, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1902,
+      "Input Dims": [[1, 256, 2, 2], []], "Input type": ["float", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920834019, "dur": 422,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1903,
+      "Input Dims": [[1, 256, 2, 2], [256, 256, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920834021, "dur": 419,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1904,
+      "Input Dims": [[1, 256, 2, 2], [256, 256, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920834027, "dur": 411,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1905,
+      "Input Dims": [[1, 256, 2, 2], [256, 256, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_nnpack_available", "pid": 39, "tid": 39,
+    "ts": 1670553920834030, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1906
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::thnn_conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920834031, "dur": 406,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1907,
+      "Input Dims": [[1, 256, 2, 2], [256, 256, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_slow_conv2d_forward", "pid": 39, "tid": 39,
+    "ts": 1670553920834032, "dur": 405,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1908,
+      "Input Dims": [[1, 256, 2, 2], [256, 256, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920834033, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1909,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 39, "tid": 39,
+    "ts": 1670553920834035, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1910,
+      "Input Dims": [[256, 256, 3, 3], []], "Input type": ["float", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920834037, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1911,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 39, "tid": 39,
+    "ts": 1670553920834174, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1912,
+      "Input Dims": [[0], [], []], "Input type": ["float", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920834447, "dur": 43,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1913,
+      "Input Dims": [[1, 256, 2, 2], [256], [256], [256], [256], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 39, "tid": 39,
+    "ts": 1670553920834450, "dur": 39,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1914,
+      "Input Dims": [[1, 256, 2, 2], [256], [256], [256], [256], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920834452, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1915,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::native_batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920834458, "dur": 30,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1916,
+      "Input Dims": [[1, 256, 2, 2], [256], [256], [256], [256], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920834462, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1917,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920834464, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1918,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 39, "tid": 39,
+    "ts": 1670553920834466, "dur": 5,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1919,
+      "Input Dims": [[1, 256, 2, 2], [], [], [], [], []], "Input type": ["float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920834468, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1920,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920834473, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1921,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920834476, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1922,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920834495, "dur": 73,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1923,
+      "Input Dims": [[1, 128, 4, 4], [256, 128, 1, 1], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920834499, "dur": 68,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1924,
+      "Input Dims": [[1, 128, 4, 4], [256, 128, 1, 1], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920834503, "dur": 64,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1925,
+      "Input Dims": [[1, 128, 4, 4], [256, 128, 1, 1], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_nnpack_available", "pid": 39, "tid": 39,
+    "ts": 1670553920834507, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1926
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::thnn_conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920834510, "dur": 56,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1927,
+      "Input Dims": [[1, 128, 4, 4], [256, 128, 1, 1], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_slow_conv2d_forward", "pid": 39, "tid": 39,
+    "ts": 1670553920834512, "dur": 54,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1928,
+      "Input Dims": [[1, 128, 4, 4], [256, 128, 1, 1], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920834513, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1929,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 39, "tid": 39,
+    "ts": 1670553920834516, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1930,
+      "Input Dims": [[256, 128, 1, 1], []], "Input type": ["float", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920834520, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1931,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 39, "tid": 39,
+    "ts": 1670553920834533, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1932,
+      "Input Dims": [[0], [], []], "Input type": ["float", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920834572, "dur": 28,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1933,
+      "Input Dims": [[1, 256, 2, 2], [1, 256, 2, 2], [256], [256], [256], [256], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 39, "tid": 39,
+    "ts": 1670553920834573, "dur": 26,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1934,
+      "Input Dims": [[1, 256, 2, 2], [256], [256], [256], [256], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920834574, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1935,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::native_batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920834576, "dur": 23,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1936,
+      "Input Dims": [[1, 256, 2, 2], [256], [256], [256], [256], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920834578, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1937,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920834580, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1938,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 39, "tid": 39,
+    "ts": 1670553920834582, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1939,
+      "Input Dims": [[1, 256, 2, 2], [], [], [], [], []], "Input type": ["float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920834583, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1940,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920834586, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1941,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920834587, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1942,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add_", "pid": 39, "tid": 39,
+    "ts": 1670553920834602, "dur": 6,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1943,
+      "Input Dims": [[1, 256, 2, 2], [1, 256, 2, 2], []], "Input type": ["float", "float", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 39, "tid": 39,
+    "ts": 1670553920834609, "dur": 5,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1944,
+      "Input Dims": [[1, 256, 2, 2]], "Input type": ["float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 39, "tid": 39,
+    "ts": 1670553920834612, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1945,
+      "Input Dims": [[1, 256, 2, 2], []], "Input type": ["float", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920834617, "dur": 398,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1946,
+      "Input Dims": [[1, 256, 2, 2], [256, 256, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920834619, "dur": 395,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1947,
+      "Input Dims": [[1, 256, 2, 2], [256, 256, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920834621, "dur": 392,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1948,
+      "Input Dims": [[1, 256, 2, 2], [256, 256, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_nnpack_available", "pid": 39, "tid": 39,
+    "ts": 1670553920834624, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1949
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::thnn_conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920834625, "dur": 387,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1950,
+      "Input Dims": [[1, 256, 2, 2], [256, 256, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_slow_conv2d_forward", "pid": 39, "tid": 39,
+    "ts": 1670553920834627, "dur": 385,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1951,
+      "Input Dims": [[1, 256, 2, 2], [256, 256, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920834628, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1952,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 39, "tid": 39,
+    "ts": 1670553920834629, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1953,
+      "Input Dims": [[256, 256, 3, 3], []], "Input type": ["float", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920834631, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1954,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 39, "tid": 39,
+    "ts": 1670553920834752, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1955,
+      "Input Dims": [[0], [], []], "Input type": ["float", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920835019, "dur": 28,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1956,
+      "Input Dims": [[1, 256, 2, 2], [256], [256], [256], [256], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 39, "tid": 39,
+    "ts": 1670553920835020, "dur": 26,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1957,
+      "Input Dims": [[1, 256, 2, 2], [256], [256], [256], [256], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920835022, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1958,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::native_batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920835025, "dur": 21,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1959,
+      "Input Dims": [[1, 256, 2, 2], [256], [256], [256], [256], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920835028, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1960,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920835030, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1961,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 39, "tid": 39,
+    "ts": 1670553920835031, "dur": 4,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1962,
+      "Input Dims": [[1, 256, 2, 2], [], [], [], [], []], "Input type": ["float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920835032, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1963,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920835036, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1964,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920835038, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1965,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 39, "tid": 39,
+    "ts": 1670553920835048, "dur": 5,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1966,
+      "Input Dims": [[1, 256, 2, 2]], "Input type": ["float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 39, "tid": 39,
+    "ts": 1670553920835050, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1967,
+      "Input Dims": [[1, 256, 2, 2], []], "Input type": ["float", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920835055, "dur": 404,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1968,
+      "Input Dims": [[1, 256, 2, 2], [256, 256, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920835057, "dur": 400,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1969,
+      "Input Dims": [[1, 256, 2, 2], [256, 256, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920835059, "dur": 397,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1970,
+      "Input Dims": [[1, 256, 2, 2], [256, 256, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_nnpack_available", "pid": 39, "tid": 39,
+    "ts": 1670553920835062, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1971
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::thnn_conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920835063, "dur": 392,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1972,
+      "Input Dims": [[1, 256, 2, 2], [256, 256, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_slow_conv2d_forward", "pid": 39, "tid": 39,
+    "ts": 1670553920835065, "dur": 390,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1973,
+      "Input Dims": [[1, 256, 2, 2], [256, 256, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920835065, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1974,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 39, "tid": 39,
+    "ts": 1670553920835067, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1975,
+      "Input Dims": [[256, 256, 3, 3], []], "Input type": ["float", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920835070, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1976,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 39, "tid": 39,
+    "ts": 1670553920835190, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1977,
+      "Input Dims": [[0], [], []], "Input type": ["float", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920835463, "dur": 26,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1978,
+      "Input Dims": [[1, 256, 2, 2], [256], [256], [256], [256], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 39, "tid": 39,
+    "ts": 1670553920835464, "dur": 24,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1979,
+      "Input Dims": [[1, 256, 2, 2], [256], [256], [256], [256], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920835466, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1980,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::native_batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920835467, "dur": 20,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1981,
+      "Input Dims": [[1, 256, 2, 2], [256], [256], [256], [256], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920835469, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1982,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920835471, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1983,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 39, "tid": 39,
+    "ts": 1670553920835472, "dur": 5,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1984,
+      "Input Dims": [[1, 256, 2, 2], [], [], [], [], []], "Input type": ["float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920835473, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1985,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920835477, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1986,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920835479, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1987,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add_", "pid": 39, "tid": 39,
+    "ts": 1670553920835490, "dur": 5,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1988,
+      "Input Dims": [[1, 256, 2, 2], [1, 256, 2, 2], []], "Input type": ["float", "float", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 39, "tid": 39,
+    "ts": 1670553920835496, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1989,
+      "Input Dims": [[1, 256, 2, 2]], "Input type": ["float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 39, "tid": 39,
+    "ts": 1670553920835497, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1990,
+      "Input Dims": [[1, 256, 2, 2], []], "Input type": ["float", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920835502, "dur": 547,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1991,
+      "Input Dims": [[1, 256, 2, 2], [512, 256, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920835504, "dur": 544,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1992,
+      "Input Dims": [[1, 256, 2, 2], [512, 256, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920835506, "dur": 541,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1993,
+      "Input Dims": [[1, 256, 2, 2], [512, 256, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_nnpack_available", "pid": 39, "tid": 39,
+    "ts": 1670553920835510, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1994
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::thnn_conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920835512, "dur": 534,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1995,
+      "Input Dims": [[1, 256, 2, 2], [512, 256, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_slow_conv2d_forward", "pid": 39, "tid": 39,
+    "ts": 1670553920835513, "dur": 532,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1996,
+      "Input Dims": [[1, 256, 2, 2], [512, 256, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920835514, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1997,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 39, "tid": 39,
+    "ts": 1670553920835516, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1998,
+      "Input Dims": [[512, 256, 3, 3], []], "Input type": ["float", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920835518, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 1999,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 39, "tid": 39,
+    "ts": 1670553920835628, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2000,
+      "Input Dims": [[0], [], []], "Input type": ["float", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920836056, "dur": 31,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2001,
+      "Input Dims": [[1, 512, 1, 1], [512], [512], [512], [512], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 39, "tid": 39,
+    "ts": 1670553920836059, "dur": 26,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2002,
+      "Input Dims": [[1, 512, 1, 1], [512], [512], [512], [512], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920836061, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2003,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::native_batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920836064, "dur": 21,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2004,
+      "Input Dims": [[1, 512, 1, 1], [512], [512], [512], [512], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920836068, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2005,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920836069, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2006,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 39, "tid": 39,
+    "ts": 1670553920836071, "dur": 4,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2007,
+      "Input Dims": [[1, 512, 1, 1], [], [], [], [], []], "Input type": ["float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920836072, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2008,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920836077, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2009,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920836079, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2010,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 39, "tid": 39,
+    "ts": 1670553920836087, "dur": 7,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2011,
+      "Input Dims": [[1, 512, 1, 1]], "Input type": ["float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 39, "tid": 39,
+    "ts": 1670553920836089, "dur": 5,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2012,
+      "Input Dims": [[1, 512, 1, 1], []], "Input type": ["float", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920836096, "dur": 996,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2013,
+      "Input Dims": [[1, 512, 1, 1], [512, 512, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920836099, "dur": 991,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2014,
+      "Input Dims": [[1, 512, 1, 1], [512, 512, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920836103, "dur": 986,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2015,
+      "Input Dims": [[1, 512, 1, 1], [512, 512, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_nnpack_available", "pid": 39, "tid": 39,
+    "ts": 1670553920836107, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2016
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::thnn_conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920836109, "dur": 979,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2017,
+      "Input Dims": [[1, 512, 1, 1], [512, 512, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_slow_conv2d_forward", "pid": 39, "tid": 39,
+    "ts": 1670553920836110, "dur": 977,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2018,
+      "Input Dims": [[1, 512, 1, 1], [512, 512, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920836111, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2019,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 39, "tid": 39,
+    "ts": 1670553920836113, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2020,
+      "Input Dims": [[512, 512, 3, 3], []], "Input type": ["float", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920836115, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2021,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 39, "tid": 39,
+    "ts": 1670553920836325, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2022,
+      "Input Dims": [[0], [], []], "Input type": ["float", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920837098, "dur": 29,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2023,
+      "Input Dims": [[1, 512, 1, 1], [512], [512], [512], [512], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 39, "tid": 39,
+    "ts": 1670553920837100, "dur": 26,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2024,
+      "Input Dims": [[1, 512, 1, 1], [512], [512], [512], [512], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920837103, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2025,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::native_batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920837106, "dur": 19,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2026,
+      "Input Dims": [[1, 512, 1, 1], [512], [512], [512], [512], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920837109, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2027,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920837110, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2028,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 39, "tid": 39,
+    "ts": 1670553920837112, "dur": 5,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2029,
+      "Input Dims": [[1, 512, 1, 1], [], [], [], [], []], "Input type": ["float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920837113, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2030,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920837118, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2031,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920837119, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2032,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920837130, "dur": 91,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2033,
+      "Input Dims": [[1, 256, 2, 2], [512, 256, 1, 1], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920837134, "dur": 86,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2034,
+      "Input Dims": [[1, 256, 2, 2], [512, 256, 1, 1], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920837136, "dur": 84,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2035,
+      "Input Dims": [[1, 256, 2, 2], [512, 256, 1, 1], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_nnpack_available", "pid": 39, "tid": 39,
+    "ts": 1670553920837140, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2036
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::thnn_conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920837142, "dur": 77,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2037,
+      "Input Dims": [[1, 256, 2, 2], [512, 256, 1, 1], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_slow_conv2d_forward", "pid": 39, "tid": 39,
+    "ts": 1670553920837143, "dur": 76,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2038,
+      "Input Dims": [[1, 256, 2, 2], [512, 256, 1, 1], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920837144, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2039,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 39, "tid": 39,
+    "ts": 1670553920837146, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2040,
+      "Input Dims": [[512, 256, 1, 1], []], "Input type": ["float", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920837149, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2041,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 39, "tid": 39,
+    "ts": 1670553920837163, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2042,
+      "Input Dims": [[0], [], []], "Input type": ["float", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920837224, "dur": 20,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2043,
+      "Input Dims": [[1, 512, 1, 1], [1, 512, 1, 1], [512], [512], [512], [512], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 39, "tid": 39,
+    "ts": 1670553920837225, "dur": 18,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2044,
+      "Input Dims": [[1, 512, 1, 1], [512], [512], [512], [512], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920837226, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2045,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::native_batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920837228, "dur": 15,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2046,
+      "Input Dims": [[1, 512, 1, 1], [512], [512], [512], [512], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920837229, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2047,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920837230, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2048,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 39, "tid": 39,
+    "ts": 1670553920837232, "dur": 4,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2049,
+      "Input Dims": [[1, 512, 1, 1], [], [], [], [], []], "Input type": ["float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920837233, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2050,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920837237, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2051,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920837238, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2052,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add_", "pid": 39, "tid": 39,
+    "ts": 1670553920837245, "dur": 6,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2053,
+      "Input Dims": [[1, 512, 1, 1], [1, 512, 1, 1], []], "Input type": ["float", "float", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 39, "tid": 39,
+    "ts": 1670553920837251, "dur": 4,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2054,
+      "Input Dims": [[1, 512, 1, 1]], "Input type": ["float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 39, "tid": 39,
+    "ts": 1670553920837253, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2055,
+      "Input Dims": [[1, 512, 1, 1], []], "Input type": ["float", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920837258, "dur": 962,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2056,
+      "Input Dims": [[1, 512, 1, 1], [512, 512, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920837260, "dur": 959,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2057,
+      "Input Dims": [[1, 512, 1, 1], [512, 512, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920837262, "dur": 956,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2058,
+      "Input Dims": [[1, 512, 1, 1], [512, 512, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_nnpack_available", "pid": 39, "tid": 39,
+    "ts": 1670553920837264, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2059
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::thnn_conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920837266, "dur": 951,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2060,
+      "Input Dims": [[1, 512, 1, 1], [512, 512, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_slow_conv2d_forward", "pid": 39, "tid": 39,
+    "ts": 1670553920837267, "dur": 949,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2061,
+      "Input Dims": [[1, 512, 1, 1], [512, 512, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920837268, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2062,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 39, "tid": 39,
+    "ts": 1670553920837270, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2063,
+      "Input Dims": [[512, 512, 3, 3], []], "Input type": ["float", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920837272, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2064,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 39, "tid": 39,
+    "ts": 1670553920837481, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2065,
+      "Input Dims": [[0], [], []], "Input type": ["float", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920838226, "dur": 26,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2066,
+      "Input Dims": [[1, 512, 1, 1], [512], [512], [512], [512], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 39, "tid": 39,
+    "ts": 1670553920838229, "dur": 22,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2067,
+      "Input Dims": [[1, 512, 1, 1], [512], [512], [512], [512], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920838231, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2068,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::native_batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920838233, "dur": 18,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2069,
+      "Input Dims": [[1, 512, 1, 1], [512], [512], [512], [512], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920838236, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2070,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920838237, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2071,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 39, "tid": 39,
+    "ts": 1670553920838238, "dur": 5,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2072,
+      "Input Dims": [[1, 512, 1, 1], [], [], [], [], []], "Input type": ["float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920838240, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2073,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920838245, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2074,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920838246, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2075,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 39, "tid": 39,
+    "ts": 1670553920838253, "dur": 5,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2076,
+      "Input Dims": [[1, 512, 1, 1]], "Input type": ["float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 39, "tid": 39,
+    "ts": 1670553920838255, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2077,
+      "Input Dims": [[1, 512, 1, 1], []], "Input type": ["float", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920838260, "dur": 963,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2078,
+      "Input Dims": [[1, 512, 1, 1], [512, 512, 3, 3], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920838263, "dur": 958,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2079,
+      "Input Dims": [[1, 512, 1, 1], [512, 512, 3, 3], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 39, "tid": 39,
+    "ts": 1670553920838265, "dur": 955,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2080,
+      "Input Dims": [[1, 512, 1, 1], [512, 512, 3, 3], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "", "", "", "Scalar", "", "Scalar", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_nnpack_available", "pid": 39, "tid": 39,
+    "ts": 1670553920838268, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2081
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::thnn_conv2d", "pid": 39, "tid": 39,
+    "ts": 1670553920838270, "dur": 949,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2082,
+      "Input Dims": [[1, 512, 1, 1], [512, 512, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_slow_conv2d_forward", "pid": 39, "tid": 39,
+    "ts": 1670553920838273, "dur": 945,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2083,
+      "Input Dims": [[1, 512, 1, 1], [512, 512, 3, 3], [], [], [], []], "Input type": ["float", "float", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920838274, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2084,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::view", "pid": 39, "tid": 39,
+    "ts": 1670553920838275, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2085,
+      "Input Dims": [[512, 512, 3, 3], []], "Input type": ["float", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920838278, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2086,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resize_", "pid": 39, "tid": 39,
+    "ts": 1670553920838489, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2087,
+      "Input Dims": [[0], [], []], "Input type": ["float", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920839228, "dur": 25,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2088,
+      "Input Dims": [[1, 512, 1, 1], [512], [512], [512], [512], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 39, "tid": 39,
+    "ts": 1670553920839230, "dur": 22,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2089,
+      "Input Dims": [[1, 512, 1, 1], [512], [512], [512], [512], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920839231, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2090,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::native_batch_norm", "pid": 39, "tid": 39,
+    "ts": 1670553920839233, "dur": 19,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2091,
+      "Input Dims": [[1, 512, 1, 1], [512], [512], [512], [512], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Scalar", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920839236, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2092,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920839237, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2093,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 39, "tid": 39,
+    "ts": 1670553920839239, "dur": 4,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2094,
+      "Input Dims": [[1, 512, 1, 1], [], [], [], [], []], "Input type": ["float", "", "", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920839240, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2095,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920839244, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2096,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920839246, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2097,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "Scalar", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add_", "pid": 39, "tid": 39,
+    "ts": 1670553920839254, "dur": 5,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2098,
+      "Input Dims": [[1, 512, 1, 1], [1, 512, 1, 1], []], "Input type": ["float", "float", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 39, "tid": 39,
+    "ts": 1670553920839260, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2099,
+      "Input Dims": [[1, 512, 1, 1]], "Input type": ["float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 39, "tid": 39,
+    "ts": 1670553920839261, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2100,
+      "Input Dims": [[1, 512, 1, 1], []], "Input type": ["float", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::adaptive_avg_pool2d", "pid": 39, "tid": 39,
+    "ts": 1670553920839270, "dur": 57,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2101,
+      "Input Dims": [[1, 512, 1, 1], []], "Input type": ["float", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::mean", "pid": 39, "tid": 39,
+    "ts": 1670553920839273, "dur": 54,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2102,
+      "Input Dims": [[1, 512, 1, 1], [], [], []], "Input type": ["float", "", "Scalar", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::sum", "pid": 39, "tid": 39,
+    "ts": 1670553920839281, "dur": 13,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2103,
+      "Input Dims": [[1, 512, 1, 1], [], [], [], [1, 512, 1, 1]], "Input type": ["float", "", "Scalar", "Scalar", "float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::fill_", "pid": 39, "tid": 39,
+    "ts": 1670553920839288, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2104,
+      "Input Dims": [[1, 512, 1, 1], []], "Input type": ["float", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::div_", "pid": 39, "tid": 39,
+    "ts": 1670553920839296, "dur": 30,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2105,
+      "Input Dims": [[1, 512, 1, 1], []], "Input type": ["float", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::div_", "pid": 39, "tid": 39,
+    "ts": 1670553920839300, "dur": 26,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2106,
+      "Input Dims": [[1, 512, 1, 1], []], "Input type": ["float", "long int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::to", "pid": 39, "tid": 39,
+    "ts": 1670553920839305, "dur": 17,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2107,
+      "Input Dims": [[], [], [], [], []], "Input type": ["long int", "Scalar", "Scalar", "Scalar", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_to_copy", "pid": 39, "tid": 39,
+    "ts": 1670553920839307, "dur": 15,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2108,
+      "Input Dims": [[], [], [], [], [], [], []], "Input type": ["long int", "Scalar", "", "", "", "Scalar", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_strided", "pid": 39, "tid": 39,
+    "ts": 1670553920839313, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2109,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "", "Scalar", "Scalar", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::copy_", "pid": 39, "tid": 39,
+    "ts": 1670553920839318, "dur": 4,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2110,
+      "Input Dims": [[], [], []], "Input type": ["float", "long int", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::flatten", "pid": 39, "tid": 39,
+    "ts": 1670553920839329, "dur": 11,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2111,
+      "Input Dims": [[1, 512, 1, 1], [], []], "Input type": ["float", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_reshape_alias", "pid": 39, "tid": 39,
+    "ts": 1670553920839334, "dur": 6,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2112,
+      "Input Dims": [[1, 512, 1, 1], [], []], "Input type": ["float", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::linear", "pid": 39, "tid": 39,
+    "ts": 1670553920839344, "dur": 48,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2113,
+      "Input Dims": [[1, 512], [10, 512], [10]], "Input type": ["float", "float", "float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::t", "pid": 39, "tid": 39,
+    "ts": 1670553920839347, "dur": 17,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2114,
+      "Input Dims": [[10, 512]], "Input type": ["float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::transpose", "pid": 39, "tid": 39,
+    "ts": 1670553920839358, "dur": 5,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2115,
+      "Input Dims": [[10, 512], [], []], "Input type": ["float", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::as_strided", "pid": 39, "tid": 39,
+    "ts": 1670553920839361, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2116,
+      "Input Dims": [[10, 512], [], [], []], "Input type": ["float", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::addmm", "pid": 39, "tid": 39,
+    "ts": 1670553920839367, "dur": 23,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2117,
+      "Input Dims": [[10], [1, 512], [512, 10], [], []], "Input type": ["float", "float", "float", "Scalar", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::expand", "pid": 39, "tid": 39,
+    "ts": 1670553920839375, "dur": 2,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2118,
+      "Input Dims": [[10], [], []], "Input type": ["float", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::as_strided", "pid": 39, "tid": 39,
+    "ts": 1670553920839376, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2119,
+      "Input Dims": [[10], [], [], []], "Input type": ["float", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::copy_", "pid": 39, "tid": 39,
+    "ts": 1670553920839378, "dur": 3,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2120,
+      "Input Dims": [[1, 10], [1, 10], []], "Input type": ["float", "float", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resolve_conj", "pid": 39, "tid": 39,
+    "ts": 1670553920839383, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2121,
+      "Input Dims": [[1, 10]], "Input type": ["float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resolve_conj", "pid": 39, "tid": 39,
+    "ts": 1670553920839384, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2122,
+      "Input Dims": [[1, 512]], "Input type": ["float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::zeros", "pid": 39, "tid": 39,
+    "ts": 1670553920839478, "dur": 6,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2123,
+      "Input Dims": [[], [], [], [], []], "Input type": ["", "Scalar", "", "", "Scalar"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920839481, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2124,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "", "", "Scalar", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::zero_", "pid": 39, "tid": 39,
+    "ts": 1670553920839483, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2125,
+      "Input Dims": [[1]], "Input type": ["float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", 
+    "name": "postprocess", "pid": 39, "tid": 39,
+    "ts": 1670553920839500, "dur": 90,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2126
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 39, "tid": 39,
+    "ts": 1670553920839502, "dur": 1,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2127,
+      "Input Dims": [[], [], [], [], [], []], "Input type": ["", "Scalar", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::softmax", "pid": 39, "tid": 39,
+    "ts": 1670553920839519, "dur": 9,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2128,
+      "Input Dims": [[1, 10], [], []], "Input type": ["float", "Scalar", ""], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_softmax", "pid": 39, "tid": 39,
+    "ts": 1670553920839521, "dur": 7,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2129,
+      "Input Dims": [[1, 10], [], []], "Input type": ["float", "Scalar", "Scalar"], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::topk", "pid": 39, "tid": 39,
+    "ts": 1670553920839537, "dur": 11,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2130,
+      "Input Dims": [[1, 10], [], [], [], []], "Input type": ["float", "Scalar", "Scalar", "Scalar", "Scalar"], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resolve_conj", "pid": 39, "tid": 39,
+    "ts": 1670553920839557, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2131,
+      "Input Dims": [[1, 5]], "Input type": ["float"], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resolve_neg", "pid": 39, "tid": 39,
+    "ts": 1670553920839558, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2132,
+      "Input Dims": [[1, 5]], "Input type": ["float"], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resolve_conj", "pid": 39, "tid": 39,
+    "ts": 1670553920839562, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2133,
+      "Input Dims": [[1, 5]], "Input type": ["long int"], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::resolve_neg", "pid": 39, "tid": 39,
+    "ts": 1670553920839562, "dur": 0,
+    "args": {
+      "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+      "External id": 2134,
+      "Input Dims": [[1, 5]], "Input type": ["long int"], "Fwd thread id": 0, "Sequence number": 0
+    }
+  },
+  {
+    "name": "process_name", "ph": "M", "ts": 1670553920829483, "pid": 39, "tid": 0,
+    "args": {
+      "name": "python3.8"
+    }
+  },
+  {
+    "name": "process_labels", "ph": "M", "ts": 1670553920829483, "pid": 39, "tid": 0,
+    "args": {
+      "labels": "CPU"
+    }
+  },
+  {
+    "name": "process_sort_index", "ph": "M", "ts": 1670553920829483, "pid": 39, "tid": 0,
+    "args": {
+      "sort_index": 39
+    }
+  },
+  {
+    "name": "thread_name", "ph": "M", "ts": 1670553920829483, "pid": 39, "tid": 39,
+    "args": {
+      "name": "thread 39 (python3.8)"
+    }
+  },
+  {
+    "name": "thread_sort_index", "ph": "M", "ts": 1670553920829483, "pid": 39, "tid": 39,
+    "args": {
+      "sort_index": 39
+    }
+  },
+  {
+    "name": "thread_name", "ph": "M", "ts": 1670553920829483, "pid": 39, "tid": 39,
+    "args": {
+      "name": "thread 39 (python3.8)"
+    }
+  },
+  {
+    "name": "thread_sort_index", "ph": "M", "ts": 1670553920829483, "pid": 39, "tid": 39,
+    "args": {
+      "sort_index": 39
+    }
+  },
+  {
+    "ph": "X", "cat": "Trace", "ts": 1670553920829416, "dur": 10196,
+    "pid": "Spans", "tid": "PyTorch Profiler",
+    "name": "PyTorch Profiler (0)",
+    "args": {
+      "Op count": 0
+    }
+  },
+  {
+    "name": "process_sort_index", "ph": "M", "ts": 1670553920829416,
+    "pid": "Spans", "tid": 0,
+    "args": {
+      "sort_index": 536870912
+    }
+  },
+  {
+    "name": "Iteration Start: PyTorch Profiler", "ph": "i", "s": "g",
+    "pid": "Traces", "tid": "Trace PyTorch Profiler", "ts": 1670553920829416
+  },
+  {
+    "name": "Record Window End", "ph": "i", "s": "g",
+    "pid": "", "tid": "", "ts": 1670553920844090
+  }
+  ],
+  "traceName": "/tmp/pytorch_profiler/cifar_basic/ip-172-31-6-252_39.1670553920861.pt.trace.json"
+}
